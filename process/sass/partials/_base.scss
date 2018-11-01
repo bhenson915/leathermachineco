@@ -1,0 +1,90 @@
+<<<<<<< HEAD
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+  overflow: hidden;
+}
+
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5rem;
+  display: block;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 576px){
+  main {
+    padding: 0 1rem;
+    box-sizing: border-box;
+=======
+/* ========== Base Styles ==========*/
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+}
+  
+body {
+    font-family: "Lato";
+    font-size: 18px;
+    line-height: 27px;
+    // max-width: 2160px; 
+    margin: 0 auto;
+    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+    position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: $mute;
+  border-bottom: none;
+  transition: all 400ms;
+  &:hover {
+    color: $citrus;
+      
+  }
+}
+
+.link-no-decoration{
+  border-bottom: 1px solid transparent;
+}
+
+p {
+    font-family: "Lato";
+    font-size: 18px;
+    line-height: 27px;
+    color: #32434F;
+    font-weight: 300;
+    margin: 12px 0; 
+}
+
+.wrapper {
+    width: 80%;
+    margin: 1em auto 1em;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#logo {
+    max-width: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.mute {
+  background: $mute;
+}
+
+.white-text {
+  color: white;
+  h1, h2, h3, h4, h5, h6, p {
+    color: white;
+>>>>>>> 4016f491bc7436fcd8782706212077b78db0d114
+  }
+}
