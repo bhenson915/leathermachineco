@@ -21,11 +21,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    span{
+      color: white;
+    }
     li {
       height: 40px;
-      padding: 0 1rem;
-      border-left: 1px solid white;
-      border-right: 1px solid white;
+      padding: 0 .25rem;
       box-sizing: border-box;
       display: flex;
       flex-direction: row;
@@ -34,6 +35,9 @@
     a{
       color: white;
       text-decoration: none;
+      &:hover{
+        color: $desert;
+      }
     }
   }
 }
@@ -80,15 +84,30 @@ header nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      position: absolute;
+      display: none;
+    }
+    li a:link,
+    li a:active,
+    li a:visited {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: $king;
+    display: block;
+    overflow: hidden;
+    transition: color 200ms;
+    &:hover{
+      color: $desert;
+      transition: color 200ms;
+    }
+  }
 }
 
-#navigation ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  position: absolute;
-  display: none;
-}
+#navigation 
 
 #navigation ul ul {
   position: absolute;
@@ -109,7 +128,7 @@ header nav {
 #navigation li a:visited {
   padding: 0.5rem 1rem;
   text-decoration: none;
-  color: #000000;
+  color: $king;
   display: block;
   overflow: hidden;
 }

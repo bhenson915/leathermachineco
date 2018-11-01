@@ -10,13 +10,14 @@
 <body>
     <div class="top-hat-container">
       <div class="top-hat-cta">
-        <p>Free Ground Shipping on All Orders $30+ (Excludes HI, AK, PR</p>
+        <p>Free Ground Shipping on All Orders $30+ (Excludes HI, AK, PR)</p>
       </div>
       <div class="top-hat-social">
 
       </div>
       <ul class="top-hat-user">
-        <li><a href="#">Login</a></li> 
+        <li><a href="#">Login</a></li>
+        <span>|</span> 
         <li><a href="#">Register</a></li> 
         <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li> 
       </ul>
@@ -24,11 +25,198 @@
     <header>
         <h1 class="branding"><a href="index.html">Leather Machine Co. | BEM</a></h1>
         <nav>
+            <button class="navbar-toggler closed" type="button" data-target="#navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
             <ul id="navigation">
-                
+               <li>
+                 <a href="products.html">Products</a>
+                 <ul>
+                   <li>Cobra Machines</li>
+                 </ul>
+               </li>
+               <li>
+                 <a href="support.html">Support</a>
+               </li> 
+               <li>
+                 <a href="madewithcobra.html">Made with Cobra</a>
+               </li>
+               <li>
+                 <a href="about.html">About</a>              
+               </li>
+               <li>
+                 <button class="btn-primary">Contact</button>
+               </li>
             </ul>
         </nav>
     </header>
+    <section>
+      <div class="container">
+        <h1>Components</h1>
+        <h2>Full Width &amp; Height Component</h2>
+        <p>Due to the component taking up most of the page I have created a new page to host this component. <a href="full-width-and-height-component.html" target="_blank">See Component</a></p>
+        <h3>Component Structure</h3>
+        <table>
+          <tr>
+            <td>
+              .full-width-heigth { }<br />
+              .full-width-height-container { }<br />
+              .full-width-height-content { }<br />
+              .full-width-height-title { }<br />
+              .full-width-height-description { }<br />
+              .full-width-height-image { }
+            </td>
+            <td>
+              .full-width-height-container.reversed { }
+            </td>
+          </tr>
+        </table>
+        <h3>Component Markup</h3>
+  <pre><code class="html">&lt;div class="full-width-height"&gt;
+    &lt;div class="full-width-height-container"&gt;
+      &lt;div class="full-width-height-content"&gt;
+        &lt;h2 class="full-width-height-title"&gt;Component Title&lt;/h2&gt;
+        &lt;div class="full-width-height-description"&gt;
+          &lt;p&gt;Component Description &amp; text.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="full-width-height-image" style="background-image: url(image-location);"&gt;
+        &lt;img src="image-location" alt="Image Description" /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+  
+        <h3>Component Modifiers</h3>
+        <h4>Reversed</h4>
+  <pre><code class="html">&lt;div class="full-width-height reversed"&gt;
+    ...
+  &lt;/div&gt;</code></pre>
+  
+        <h2>Article Component</h2>
+  
+        <div class="article-component">
+          <div class="article-row">
+            <div class="article-container">
+              <div class="article-image">
+                <img src="images/robots.jpeg" alt="Robots holding hands" />
+              </div>
+              <div class="article-content">
+                <h3>Article Name</h3>
+                <ul class="article-information">
+                  <li>Carlos Cucalon</li>
+                  <li>October 2, 2018</li>
+                </ul>
+                <p>Vestibulum at maximus massa. Vivamus placerat lacus vel neque egestas accumsan. Sed in cursus elit. Integer in orci suscipit, porta ligula eget, molestie nisl.</p>
+                <a class="article-cta btn secondary-btn" href="#">Article Link</a>
+              </div>
+            </div>
+            <div class="article-container">
+              <div class="article-image">
+                <img src="images/robots.jpeg" alt="Robots holding hands" />
+              </div>
+              <div class="article-content">
+                <h3>Article Name</h3>
+                <ul class="article-information">
+                  <li>Carlos Cucalon</li>
+                  <li>October 2, 2018</li>
+                </ul>
+                <p>Vestibulum at maximus massa. Vivamus placerat lacus vel neque egestas accumsan. Sed in cursus elit. Integer in orci suscipit, porta ligula eget, molestie nisl.</p>
+                <a class="article-cta btn secondary-btn" href="#">Article Link</a>
+              </div>
+            </div>
+            <div class="article-container">
+              <div class="article-image">
+                <img src="images/robots.jpeg" alt="Robots holding hands" />
+              </div>
+              <div class="article-content">
+                <h3>Article Name</h3>
+                <ul class="article-information">
+                  <li>Carlos Cucalon</li>
+                  <li>October 2, 2018</li>
+                </ul>
+                <p>Vestibulum at maximus massa. Vivamus placerat lacus vel neque egestas accumsan. Sed in cursus elit. Integer in orci suscipit, porta ligula eget, molestie nisl.</p>
+                <a class="article-cta btn secondary-btn" href="#">Article Link</a>
+              </div>
+            </div>
+          </div>
+          <div class="article-row">
+            <div class="article-container">
+              <div class="article-image">
+                <img src="images/robots.jpeg" alt="Robots holding hands" />
+              </div>
+              <div class="article-content">
+                <h3>Article Name</h3>
+                <ul class="article-information">
+                  <li>Carlos Cucalon</li>
+                  <li>October 2, 2018</li>
+                </ul>
+                <p>Vestibulum at maximus massa. Vivamus placerat lacus vel neque egestas accumsan. Sed in cursus elit. Integer in orci suscipit, porta ligula eget, molestie nisl.</p>
+                <a class="article-cta btn secondary-btn" href="#">Article Link</a>
+              </div>
+            </div>
+            <div class="article-container">
+              <div class="article-image">
+                <img src="images/robots.jpeg" alt="Robots holding hands" />
+              </div>
+              <div class="article-content">
+                <h3>Article Name</h3>
+                <ul class="article-information">
+                  <li>Carlos Cucalon</li>
+                  <li>October 2, 2018</li>
+                </ul>
+                <p>Vestibulum at maximus massa. Vivamus placerat lacus vel neque egestas accumsan. Sed in cursus elit. Integer in orci suscipit, porta ligula eget, molestie nisl.</p>
+                <a class="article-cta btn secondary-btn" href="#">Article Link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <h3>Component Structure</h3>
+        <table>
+          <tr>
+            <td>
+              .article-component { }<br />
+              .article-container { }<br />
+              .article-image { }<br />
+              .article-content { }<br />
+              .article-information { }<br />
+              .article-cta { }
+            </td>
+          </tr>
+        </table>
+  
+        <h3>Component Markup</h3>
+  <pre><code class="html">&lt;div class="article-component"&gt;
+    &lt;div class="article-row"&gt;
+      &lt;div class="article-container"&gt;
+        &lt;div class="article-image"&gt;
+          &lt;img src="image-location" alt="Image Description" /&gt;
+        &lt;/div&gt;
+        &lt;div class="article-content"&gt;
+          &lt;h3&gt;Article Name&lt;/h3&gt;
+          &lt;ul class="article-information"&gt;
+            &lt;li&gt;Author&lt;/li&gt;
+            &lt;li&gt;Date&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;p&gt;Component Description & text.&lt;/p&gt;
+          &lt;a class="article-cta btn secondary-btn" href="#"&gt;Article Link&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+  
+      &lt;div class="article-container"&gt;
+        ...
+      &lt;/div&gt;
+  
+      &lt;div class="article-container"&gt;
+        ...
+      &lt;/div&gt;
+  
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+  
+  </div>
+    </section>
     <!-- <header>
         <h1 class="branding"><a href="index.html">CTEC 3350 | Web Design &amp; Development II</a></h1>
         <nav>

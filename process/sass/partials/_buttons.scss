@@ -1,0 +1,40 @@
+button {
+    padding: .75rem 1.25rem;
+    background: $king;
+    color: white;
+    border: none;
+    transition: background 200ms;
+
+    &:hover {
+        background: $desert;
+        transition: background 200ms;
+    }
+}
+
+.btn-primary {
+    padding: .75rem 1.25rem;
+    background: $king;
+    color: white;
+    text-transform: uppercase;
+    transition: background 200ms;
+
+}
+
+.btn-secondary{
+    padding: .75rem 1.25rem;
+    background: $desert;
+    color: $king;
+    text-transform: uppercase;
+    transition: background 200ms;
+
+}
+
+.btn-cta {
+    padding: .75rem 1.25rem;
+    background: $cobra;
+    color: $king;
+    border: 1px solid $desert;
+    text-transform: uppercase;
+    transition: background 200ms;
+
+}

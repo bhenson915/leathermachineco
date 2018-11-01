@@ -1,2 +1,60 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Montserrat:400,400i,600,600i');
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Oswald:400,600');
+@import url('https://use.fontawesome.com/releases/v5.4.2/css/all.css');
+
+* {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+
+.h1, .h2, .h3, .h4 {
+    font-weight: 300;
+}
+
+.h1 {
+    font-size: 4.236em;
+}
+  
+.h2 {
+    font-size: 2.618em;
+}
+  
+.h3 {
+    font-size: 1.618em;
+}
+  
+.h4 {
+    font-size: 1.25em;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    color: $king; 
+}
+  
+h1 {
+    font-size: 4.236em;
+    line-height: 50px;
+    font-weight: 500;
+    margin: 5px 0 15px 0; 
+}
+  
+h2 {
+    font-size: 2.618em;
+    line-height: 45px;
+    font-weight: 400;
+    margin: 45px 0 0 0; 
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.618em;
+    font-weight: 300;
+    margin: 30px 0 0 0; 
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 15px 0 0 0; 
+}
