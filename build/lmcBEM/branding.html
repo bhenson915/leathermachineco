@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Leather Machine Co. | Branding</title>
+</head>
+<body>
+    <div class="top-hat-container">
+      <div class="top-hat-cta">
+        <p>Free Ground Shipping on All Orders $30+ (Excludes HI, AK, PR)</p>
+      </div>
+      <div class="top-hat-search">
+        
+      </div>
+      <ul class="top-hat-user">
+        <li><a href="#">Login</a></li>
+        <span>|</span> 
+        <li><a href="#">Register</a></li> 
+        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li> 
+        <div class="wrap">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+      </ul>
+    </div>
+    <header>
+        <h1 class="branding"><a href="index.html">Leather Machine Co. | BEM</a></h1>
+        <nav>
+            <button class="navbar-toggler closed" type="button" data-target="#navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <ul id="navigation">
+               <li class="dropdown-menu">
+                 <a href="products.html">Products</a>
+                 <ul class="dropdown-links">
+                   <li>Cobra Machines</li>
+                 </ul>
+               </li>
+               <li>
+                 <a href="support.html">Support</a>
+               </li> 
+               <li>
+                 <a href="madewithcobra.html">Made with Cobra</a>
+               </li>
+               <li>
+                 <a href="about.html">About</a>              
+               </li>
+               <li>
+                 <button class="btn-primary">Contact</button>
+               </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="bem-nav">
+        <ul>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="branding.html">Branding</a></li>
+            <li><a href="components.html">Components</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div id="color-scheme" class="main-content">
+            <h1>Block Element Modifier</h1>
+
+          <h2>Branding</h2>
+          <h3>COLOR SCHEME</h3>
+          <div class="container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Color</th>
+                  <th>Declarations</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div class="primary"></div></td>
+                  <td>
+                    <div class="primary-dec">
+                      <h4>Primary Color</h4>
+                      <p>Hexadecimal: #1F4170 <br>
+                        RGB: 31, 65, 112<br>
+                        RGBA: 31, 65, 122, 1
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><div class="secondary"></div></td>
+                  <td>
+                    <div class="secondary-dec">
+                      <h4>Secondary Color</h4>
+                      <p>Hexadecimal: #E2752A <br>
+                        RGB: 226, 117, 42<br>
+                        RGBA: 226, 117, 42, 1
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><div class="tertiary"></div></td>
+                  <td>
+                    <div class="tertiary-dec">
+                      <h4>Tertiary Color</h4>
+                      <p>Hexadecimal: #D9DBDC <br>
+                        RGB: 217, 219, 220<br>
+                        RGBA: 217, 219, 220, 1
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><div class="primary-light"></div></td>
+                  <td>
+                    <div class="primary-light-dec">
+                      <h4>Primary Light Color</h4>
+                      <p>Hexadecimal: #5681B3 <br>
+                        RGB: 86, 129, 179<br>
+                        RGBA: 86, 129, 179, 1
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><div class="secondary-light"></div></td>
+                  <td>
+                    <div class="secondary-light-dec">
+                      <h4>Secondary Light Color</h4>
+                      <p>Hexadecimal: #EAA271 <br>
+                        RGB: 234, 162, 113<br>
+                        RGBA: 234, 162, 113, 1
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container">
+        <div id="markup" class="main-content">
+          <h3>MARKUP</h3>
+          <h4>Basic Page Template</h4>
+  
+  
+          <div class="highlight" id="mk-headings">
+  <code><pre>&lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+  
+    &lt;head&gt;
+      &lt;meta charset="UTF-8"&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      &lt;meta name="author" content="Bryan Henson"&gt;
+      &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+      &lt;meta name="title" centent="Home | Fish Creek Animal Hospital"&gt;
+      &lt;meta description="Veterinary Services for Mansfield, TX"&gt;
+      &lt;meta keywords="veterinarian, emergency vet, veterinary clinic, vets, pet hospital, 24 hour vet, vet clinic, animal clinic, pet vet, dog vaccinations, dog vet, cat hospital, cat vaccinations, pet emergency, Mansifield, Arlington, Grand Prarie, Fort Worth"&gt;
+  
+      &lt;link rel="stylesheet" href="css/style.css"&gt;
+  
+      &lt;title&gt;Home | Fish Creek Animal Hospital&lt;/title&gt;
+  
+    &lt;/head&gt;
+  
+  
+    &lt;body&gt;
+  
+      &lt;div id="primary-nav-top"&gt;
+        &lt;div class="primary-nav-content"&gt;
+          &lt;div id="serve"&gt;&lt;p&gt;Serving the Mansfield Community for over &lt;em&gt;30 years&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;
+          &lt;div class="social"&gt;
+            &lt;div class="social-links"&gt;
+              &lt;a href=""&gt;&lt;i class="fa fa-facebook-official" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;
+              &lt;a href=""&gt;&lt;i class="fa fa-twitter" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;
+              &lt;a href=""&gt;&lt;i class="fa fa-instagram" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="contact-nav"&gt;
+              &lt;p&gt;&lt;a href="tel:817.568.2000"&gt;817.568.2000&lt;/a&gt; | &lt;a href="appointment.html"&gt;&lt;button class="btn-1"&gt;Appointment&lt;/button&gt;&lt;/a&gt;&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+  
+      &lt;div class="container-center"&gt;
+        &lt;nav id="primary_nav_wrap"&gt;
+          &lt;div id="logo"&gt;&lt;a href="index.html"&gt;&lt;img src="img\fc-logo.svg" alt="Fish Creek Animal Hospital Logo"&gt;&lt;/a&gt;&lt;/div&gt;
+          &lt;ul class="navbar"&gt;
+            &lt;li class="dropdown"&gt;
+              &lt;ul class="dropbtn current"&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li class="dropdown"&gt;
+              &lt;ul class="dropbtn"&gt;&lt;a href="merchandise.html"&gt;Merchandise&lt;/a&gt;
+              &lt;/ul&gt;
+              &lt;div class="dropdown-content"&gt;
+                &lt;a href="products.html"&gt;Products&lt;/a&gt;
+                &lt;a href="partners.html"&gt;Partners&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class="dropdown"&gt;
+              &lt;ul class="dropbtn"&gt;&lt;a href="clinic.html"&gt;Clinic&lt;/a&gt;
+              &lt;/ul&gt;
+              &lt;div class="dropdown-content"&gt;
+                &lt;a href="team.html"&gt;Our Team&lt;/a&gt;
+                &lt;a href="services.html"&gt;Services&lt;/a&gt;
+                &lt;a href="calendar.html"&gt;Calendar of Events&lt;/a&gt;
+                &lt;a href="resources.html"&gt;Resources&lt;/a&gt;
+                &lt;a href="community.html"&gt;Community&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class="dropdown"&gt;
+              &lt;ul class="dropbtn"&gt;&lt;a href="blog.html"&gt;Blog&lt;/a&gt;
+              &lt;/ul&gt;
+              &lt;div class="dropdown-content"&gt;
+                &lt;a href="archive.html"&gt;Archive&lt;/a&gt;
+                &lt;a href="featured_blog.html"&gt;Featured Blog&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class="dropdown"&gt;
+              &lt;ul class="dropbtn"&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li class="dropdown"&gt;
+              &lt;ul class="dropbtn"&gt;&lt;a href="faq.html"&gt;FAQs&lt;/a&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;div class="form-group"&gt;
+              &lt;input type="text" id="username" class="form-control" placeholder="Search"/&gt;
+            &lt;/div&gt;
+            &lt;div class="search"&gt;
+              &lt;a href="search.html"&gt;&lt;i class="fa fa-search" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/ul&gt;
+          &lt;span class="hamburger"&gt;
+            &lt;i class="fa fa-bars fa-2x" aria-hidden="true"&gt;&lt;/i&gt;
+          &lt;/span&gt;
+        &lt;/nav&gt;
+      &lt;/div&gt;
+  
+      &lt;div class="accordion show hidden"&gt;
+        &lt;button class="accordion show hidden"&gt;Merchandise&lt;/button&gt;
+        &lt;div class="panel"&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="merchandise.html"&gt;Merchandise&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="products.html"&gt;Products&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="partners.html"&gt;Partners&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+  
+        &lt;button class="accordion show hidden"&gt;Clinic&lt;/button&gt;
+        &lt;div class="panel"&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="team.html"&gt;Our Team&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="services.html"&gt;Services&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="calendar.html"&gt;Calendar of Events&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="resources.html"&gt;Resources&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="community.html"&gt;Community&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+  
+        &lt;button class="accordion show hidden"&gt;Blog&lt;/button&gt;
+        &lt;div class="panel"&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="blog.html"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="archive.html"&gt;Archive&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="featured_blog.html"&gt;Featured Blog&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;button class="accordion show hidden"&gt;Contact&lt;/button&gt;
+        &lt;div class="panel"&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="contact.html"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="appointment.html"&gt;Appointment&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;button class="accordion show hidden"&gt;FAQ&lt;/button&gt;
+        &lt;div class="panel"&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="faq.html"&gt;Frequently Asked Questions&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;button class="accordion show hidden"&gt;Search&lt;/button&gt;
+        &lt;div class="panel search"&gt;
+          &lt;input type="text" name="search" placeholder="Search.."&gt;
+          &lt;a href="search.html"&gt;&lt;i class="fa fa-search fa-2x" aria-hidden="true"&gt;&lt;/i&gt;&lt;/a&gt;
+  
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;span class="hr"&gt;&lt;/span&gt;
+      &lt;footer&gt;
+            &lt;div class="container"&gt;
+              &lt;div class="wrapper"&gt;
+              &lt;div class="footer-content"&gt;
+                &lt;div class="footer-links-container"&gt;
+                  &lt;div class="footer-links"&gt;
+                    &lt;ul&gt;
+                      &lt;li&gt;&lt;strong&gt;NAVIGATE&lt;/strong&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="faq.html"&gt;Common Questions&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="contact.html"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="assets\fishCreek 1.0.pdf"&gt;Sitemap&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/div&gt;
+                  &lt;div class="footer-links"&gt;
+                    &lt;ul&gt;
+                      &lt;li&gt;&lt;strong&gt;POPULAR LINKS&lt;/strong&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="assets\Proof1.pdf"&gt;Proof #1&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="assets\Proof2.pdf"&gt;Proof #2&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="http://omega.uta.edu/~bdh3090/ctec3350/bem/typography.html"&gt;BEM&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="swot_analysis_FishCreek.html"&gt;SWOT&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="assets/CreativeBrief.pdf"&gt;Creative Brief&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+  
+  
+                  &lt;/div&gt;
+                  &lt;div class="footer-links"&gt;
+                    &lt;ul&gt;
+                      &lt;li&gt;&lt;strong&gt;INFORMATION&lt;/strong&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="https://www.google.com/maps/place/E.E.+Davis+Hall,+701+S+Nedderman+Dr,+Arlington,+TX+76019/@32.729186,-97.1174127,17z/data=!3m1!4b1!4m5!3m4!1s0x864e7d12c7db6fc1:0x665a7cd85702867e!8m2!3d32.7292117!4d-97.1151971" target="_blank"&gt;Fish Creek Animal Hospital&lt;br&gt;
+                      701 S Nedderman Dr, &lt;br&gt;
+                      Arlington, TX 76019&lt;br&gt;
+                      United States of America&lt;br&gt;&lt;/a&gt;
+                      &lt;a href="tel:817.568.2000"&gt;817.568.2000&lt;/a&gt;&lt;/li&gt;
+  
+                    &lt;/ul&gt;
+  
+                  &lt;/div&gt;
+                &lt;/div&gt;
+  
+  
+              &lt;div class="footer-subscribe"&gt;
+                &lt;p&gt;&lt;strong&gt;Subscribe to Fish Creek Animal Hospital&lt;/strong&gt;&lt;br&gt;
+                Sign up for our Newsletter to recieve up to date information about our clinic, events, and other useful information.&lt;/p&gt;
+                &lt;form&gt;
+                  &lt;div class="form-group"&gt;
+                    &lt;input type="email" id="email" class="form-control" placeholder="Email"/&gt;&lt;br&gt;
+                    &lt;a href="success.html"&gt;&lt;button type="button" name="button" class="btn-1"&gt;Subscribe&lt;/button&gt;&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+              &lt;/div&gt;
+  
+              &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/footer&gt;
+  
+          &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"&gt;&lt;/script&gt;
+          &lt;script type="text/javascript" src="js/main.js"&gt;&lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+      </pre></code>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container">
+        <div id="structure" class="main-content">
+          <h3>BASIC CONTENT STRUCTURE</h3>
+          <p>There are two different content structures set up for this site. A Full width container and a regular container that spans up to 1200px. Multiple containers can exist within a page to accomodate different components and content areas.</p>
+          <h4>FULL WIDTH CONTAINER</h4>
+          <div class="highlight" id="mk-structure">
+  <code><pre>&lt;div class="full-container"&gt;
+    ...
+  &lt;/div&gt;</pre></code>
+          </div>
+          <h4>CONTAINER</h4>
+          <div class="highlight" id="mk-headings">
+  <code><pre>&lt;div class="container"&gt;
+    ...
+  &lt;/div&gt;</pre></code>
+          </div>
+          <h4>CONTAINER WITH SIDEBAR</h4>
+          <div class="highlight" id="mk-headings">
+  <code><pre>&lt;div class="container"&gt;
+    &lt;div class="main-content"&gt;
+      ...
+    &lt;/div&gt;
+    &lt;div class="sidebar"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;</pre></code>
+          </div>
+        </div>
+      </div>
+  
+  
+            <div class="container">
+              <div id="buttons" class="main-content">
+                <h3>BUTTONS</h3>
+                <p>There are three levels of buttons for different elements throughout the site.</p>
+                <div class="container">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Type</th>
+                        <th>Sample</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p>btn-1</p>
+                        </td>
+                        <td>
+                          <button class="btn-1 xs">Submit</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>btn-2</p>
+                        </td>
+                        <td>
+                          <button class="btn-2 sm">Submit</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>btn-3</p>
+                        </td>
+                        <td>
+                          <button class="btn-3">Submit</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="highlight" id="mk-buttons">
+  <pre><code><span class="mk">&lt;button class="btn-1"&gt;</span>Submit<span class="mk">&lt;/button&gt;</span>
+  <span class="mk">&lt;button class="btn-2"&gt;</span>Submit<span class="mk">&lt;/button&gt;</span>
+  <span class="mk">&lt;button class="btn-3"&gt;</span>Submit<span class="mk">&lt;/button&gt;</span></code></pre>
+                </div>
+          </div>
+        </div>
+  
+    <div class="container">
+      <div id="forms" class="main-content">
+        <h3>FORMS</h3>
+        <h4>BASIC FORMS</h4>
+        <div class="container">
+        <table class="table">
+          <tr>
+            <th>EXAMPLE</th>
+          </tr>
+          <tr>
+            <td>
+              <form>
+                <div class="form-group">
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" class="form-control" placeholder="Username"/>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" class="form-control" placeholder="Email"/>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="text" id="password" class="form-control" placeholder="Password"/>
+                </div>
+                <div class="form-group">
+                  <p>Subscribe to our newsleetter to stay up to date.</p>
+                  <div class="form-check">
+                    <label for="daily">Daily</label>
+                    <input type="radio" name="frequency" id ="daily" value="daily" checked/>
+                  </div>
+                  <div class="form-check">
+                    <label for="weekly">Weekly</label>
+                    <input type="radio" name="frequency" id ="weekly" value="weekly"/>
+                  </div>
+                  <div class="form-check">
+                    <label for="bi-weekly">Bi-Weekly</label>
+                    <input type="radio" name="frequency" id ="bi-weekly" value="bi-weekly"/>
+                  </div>
+                  <div class="form-check">
+                    <label for="monthly">Monthly</label>
+                    <input type="radio" name="frequency" id ="monthly" value="monthly"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn-2">Submit</button>
+                </div>
+              </form>
+            </td>
+          </tr>
+        </table>
+        </div>
+        <div class="highlight" id="mk-forms">
+  <pre><code>&lt;form&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="username"&gt;Username:&lt;/label&gt;
+      &lt;input type="text" id="username" class="form-control" placeholder="Username"/&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="email"&gt;Email:&lt;/label&gt;
+      &lt;input type="email" id="email" class="form-control" placeholder="Email"/&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="password"&gt;Password:&lt;/label&gt;
+      &lt;input type="text" id="password" class="form-control" placeholder="Password"/&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;p&gt;Subscribe to our newsleetter to stay up to date.&lt;/p&gt;
+      &lt;div class="form-check"&gt;
+        &lt;label for="daily"&gt;Daily&lt;/label&gt;
+        &lt;input type="radio" name="frequency" id ="daily" value="daily" checked/&gt;
+      &lt;/div&gt;
+      &lt;div class="form-check"&gt;
+        &lt;label for="weekly"&gt;Weekly&lt;/label&gt;
+        &lt;input type="radio" name="frequency" id ="weekly" value="weekly"/&gt;
+      &lt;/div&gt;
+      &lt;div class="form-check"&gt;
+        &lt;label for="bi-weekly"&gt;Bi-Weekly&lt;/label&gt;
+        &lt;input type="radio" name="frequency" id ="bi-weekly" value="bi-weekly"/&gt;
+      &lt;/div&gt;
+      &lt;div class="form-check"&gt;
+        &lt;label for="monthly"&gt;Monthly&lt;/label&gt;
+        &lt;input type="radio" name="frequency" id ="monthly" value="monthly"/&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;button type="submit" class="btn-2"&gt;Submit&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div id="inline-forms" class="main-content">
+        <h4>INLINE FORMS</h4>
+        <div class="container">
+        <table class="table">
+          <tr>
+            <th>EXAMPLE</th>
+          </tr>
+          <tr>
+            <td>
+              <form class="inline-form">
+                <div class="form-group">
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" class="form-control" placeholder="Username"/>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" class="form-control" placeholder="Email"/>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="text" id="password" class="form-control" placeholder="Password"/>
+                </div>
+                <div class="form-group">
+                  <p>Subscribe to our newsletter to stay up to date.</p>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <label for="daily">Daily</label>
+                    <input type="radio" name="frequency" id ="daily" value="daily" checked/>
+                  </div>
+                  <div class="form-check">
+                    <label for="weekly">Weekly</label>
+                    <input type="radio" name="frequency" id ="weekly" value="weekly"/>
+                  </div>
+                  <div class="form-check">
+                    <label for="bi-weekly">Bi-Weekly</label>
+                    <input type="radio" name="frequency" id ="bi-weekly" value="bi-weekly"/>
+                  </div>
+                  <div class="form-check">
+                    <label for="monthly">Monthly</label>
+                    <input type="radio" name="frequency" id ="monthly" value="monthly"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn-2">Submit</button>
+                </div>
+              </form>
+            </td>
+          </tr>
+        </table>
+        </div>
+        <div class="highlight" id="mk-inline-forms">
+  <pre><code>&lt;form class="inline-form"&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="username"&gt;Username:&lt;/label&gt;
+      &lt;input type="text" id="username" class="form-control" placeholder="Username"/&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="email"&gt;Email:&lt;/label&gt;
+      &lt;input type="email" id="email" class="form-control" placeholder="Email"/&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="password"&gt;Password:&lt;/label&gt;
+      &lt;input type="text" id="password" class="form-control" placeholder="Password"/&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;p&gt;Subscribe to our newsleetter to stay up to date.&lt;/p&gt;
+      &lt;div class="form-check"&gt;
+        &lt;label for="daily"&gt;Daily&lt;/label&gt;
+        &lt;input type="radio" name="frequency" id ="daily" value="daily" checked/&gt;
+      &lt;/div&gt;
+      &lt;div class="form-check"&gt;
+        &lt;label for="weekly"&gt;Weekly&lt;/label&gt;
+        &lt;input type="radio" name="frequency" id ="weekly" value="weekly"/&gt;
+      &lt;/div&gt;
+      &lt;div class="form-check"&gt;
+        &lt;label for="bi-weekly"&gt;Bi-Weekly&lt;/label&gt;
+        &lt;input type="radio" name="frequency" id ="bi-weekly" value="bi-weekly"/&gt;
+      &lt;/div&gt;
+      &lt;div class="form-check"&gt;
+        &lt;label for="monthly"&gt;Monthly&lt;/label&gt;
+        &lt;input type="radio" name="frequency" id ="monthly" value="monthly"/&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;button type="submit" class="btn-2"&gt;Submit&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+      <script src="js/app.js"></script>
+          
+</body>
+</html>
