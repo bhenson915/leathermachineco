@@ -13,14 +13,51 @@
     margin: 0;
     padding: 0;
   }
-  .top-hat-social{
-
+  .search {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .searchTerm {
+    float: left;
+    width: 100%;
+    border: 3px solid $cobra;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    color: $king;
+  }
+  
+  .searchTerm:focus{
+    color: $king;
+  }
+  
+  .searchButton {
+    position: absolute;  
+    right: -50px;
+    width: 40px;
+    height: 36px;
+    padding: 0;
+    border: 1px solid $cobra;
+    background: $desert;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 100%;
+    margin-left: 1rem;
   }
   .top-hat-user{
     list-style: none;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-right: 50px;
     span{
       color: white;
     }
@@ -105,9 +142,7 @@ header nav {
       transition: color 200ms;
     }
   }
-}
-
-#navigation 
+} 
 
 #navigation ul ul {
   position: absolute;
@@ -137,17 +172,25 @@ header nav {
 #navigation li.open a:active,
 #navigation li.open a:hover,
 #navigation li.open a:visited {
-  color: #e2752a;
+  color: $desert;
+}
+
+.dropdown-links {
+  display: none;
+}
+
+.dropdown-menu:hover .dropdown-links{
+  display: block;
 }
 
 #navigation .dropdown-menu > a:after {
-  content: "\f055";
+  content: "\f0da";
   padding-left: 1rem;
   font-family: FontAwesome;
 }
 
 #navigation .dropdown-menu.open > a:after {
-  content: "\f056";
+  content: "\f0d7";
 }
 
 @media screen and (max-width: 992px){
