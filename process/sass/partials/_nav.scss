@@ -214,6 +214,10 @@ header nav {
 
 .dropdown-links {
   display: none;
+  background: white;
+  li a:hover{
+    color: $king;
+  }
 }
 
 .dropdown-menu:hover .dropdown-links{

@@ -131,6 +131,31 @@ blockquote {
   text-align: right;
 }
 
+.top {
+  font-size: 70px;
+  position: fixed;
+  bottom: 0;
+  right: 5%;
+}
+
+.primary {
+  height: 100px;
+  width: 100px;
+  background-color: $king;
+}
+
+.secondary {
+  height: 100px;
+  width: 100px;
+  background-color: $cobra;
+}
+
+.tertiary {
+  height: 100px;
+  width: 100px;
+  background-color: $desert;
+}
+
 
 
 footer {
