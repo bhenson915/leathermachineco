@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Leather Machine Co. | Branding</title>
+</head>
+<body>
+    <div class="top-hat-container">
+      <div class="top-hat-cta">
+        <p>Free Ground Shipping on All Orders $30+ (Excludes HI, AK, PR)</p>
+      </div>
+      <div class="top-hat-search">
+        
+      </div>
+      <ul class="top-hat-user">
+        <li><a href="#">Login</a></li>
+        <span>|</span> 
+        <li><a href="#">Register</a></li> 
+        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li> 
+        <div class="wrap">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+      </ul>
+    </div>
+    <header>
+        <h1 class="branding"><a href="index.html">Leather Machine Co. | BEM</a></h1>
+        <nav>
+            <button class="navbar-toggler closed" type="button" data-target="#navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <ul id="navigation">
+               <li class="dropdown-menu">
+                 <a href="products.html">Products</a>
+                 <ul class="dropdown-links">
+                   <li><a href="products.html?=Popular">Most Popular Items</a></li>
+                   <li><a href="products.html?=Cobra">Cobra Machines</a></li>
+                   <li><a href="products.html?=Other">Other Machines</a> </li>
+                   <li><a href="products.html?=Accessories">Accessories</a></li>
+                   <li><a href="products.html?=Motors">Motors/Reducers</a></li>
+                 </ul>
+               </li>
+               <li>
+                 <a href="support.html">Support</a>
+               </li> 
+               <li>
+                 <a href="madewithcobra.html">Made with Cobra</a>
+               </li>
+               <li>
+                 <a href="about.html">About</a>              
+               </li>
+               <li>
+                 <button class="btn-primary">Contact</button>
+               </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="bem-nav">
+        <ul>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="branding.html">Branding & Basic Markup</a></li>
+            <li><a href="components.html">Components</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div id="color-scheme" class="main-content">
+            <h1>Block Element Modifier</h1>
+
+          <h2>Branding</h2>
+          <h3>COLOR SCHEME</h3>
+          <div class="container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Color</th>
+                  <th>Declarations</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div class="primary"></div></td>
+                  <td>
+                    <div class="primary-dec">
+                      <h4>Primary Color</h4>
+                      <p>Hexadecimal: #1B1C32 <br>
+                        RGB: 27.28.50<br>
+                        CMYK: 87.82.50.62
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><div class="secondary"></div></td>
+                  <td>
+                    <div class="secondary-dec">
+                      <h4>Secondary Color</h4>
+                      <p>Hexadecimal: #EFE4D1 <br>
+                        RGB: 239.228.209<br>
+                        CMYK: 5.8.17.0
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><div class="tertiary"></div></td>
+                  <td>
+                    <div class="tertiary-dec">
+                      <h4>Tertiary Color</h4>
+                      <p>Hexadecimal: #C8995D <br>
+                        RGB: 200.153.93<br>
+                        CMYK: 21.39.72.2
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div id="structure" class="main-content">
+          <h3>BASIC CONTENT STRUCTURE</h3>
+          <p>There are two different content structures set up for this site. A Full width container and a regular container that spans up to 1200px. Multiple containers can exist within a page to accomodate different components and content areas.</p>
+          <h4>FULL WIDTH CONTAINER</h4>
+          <div class="highlight" id="mk-structure">
+  <code><pre>&lt;div class="full-container"&gt;
+    ...
+  &lt;/div&gt;</pre></code>
+          </div>
+          <h4>CONTAINER</h4>
+          <div class="highlight" id="mk-headings">
+  <code><pre>&lt;div class="container"&gt;
+    ...
+  &lt;/div&gt;</pre></code>
+          </div>
+          <h4>CONTAINER WITH SIDEBAR</h4>
+          <div class="highlight" id="mk-headings">
+  <code><pre>&lt;div class="container"&gt;
+    &lt;div class="main-content"&gt;
+      ...
+    &lt;/div&gt;
+    &lt;div class="sidebar"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;</pre></code>
+          </div>
+        </div>
+      </div>
+  
+  
+            <div class="container">
+              <div id="buttons" class="main-content">
+                <h3>BUTTONS</h3>
+                <p>There are three levels of buttons for different elements throughout the site.</p>
+                <div class="container">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Type</th>
+                        <th>Sample</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p>btn-primary</p>
+                        </td>
+                        <td>
+                          <button class="btn-primary">Submit</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>btn-secondary</p>
+                        </td>
+                        <td>
+                          <button class="btn-secondary">Submit</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>btn-cta</p>
+                        </td>
+                        <td>
+                          <button class="btn-cta">Submit</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="highlight" id="mk-buttons">
+  <pre><code><span class="mk">&lt;button class="btn-1"&gt;</span>Submit<span class="mk">&lt;/button&gt;</span>
+  <span class="mk">&lt;button class="btn-2"&gt;</span>Submit<span class="mk">&lt;/button&gt;</span>
+  <span class="mk">&lt;button class="btn-3"&gt;</span>Submit<span class="mk">&lt;/button&gt;</span></code></pre>
+                </div>
+          </div>
+        </div>
+  
+    <div class="container">
+      <div id="forms" class="main-content">
+        <h3>FORMS</h3>
+        <h4>BASIC FORMS</h4>
+        <div class="container">
+        <table class="table">
+          <tr>
+            <th>EXAMPLE</th>
+          </tr>
+          <tr>
+            <td>
+              <form>
+                <div class="form-group">
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" class="form-control" placeholder="Username"/>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" class="form-control" placeholder="Email"/>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="text" id="password" class="form-control" placeholder="Password"/>
+                </div>
+                <div class="form-group">
+                  <p>Subscribe to our newsleetter to stay up to date.</p>
+                  <div class="form-check">
+                    <label for="daily">Daily</label>
+                    <input type="radio" name="frequency" id ="daily" value="daily" checked/>
+                  </div>
+                  <div class="form-check">
+                    <label for="weekly">Weekly</label>
+                    <input type="radio" name="frequency" id ="weekly" value="weekly"/>
+                  </div>
+                  <div class="form-check">
+                    <label for="bi-weekly">Bi-Weekly</label>
+                    <input type="radio" name="frequency" id ="bi-weekly" value="bi-weekly"/>
+                  </div>
+                  <div class="form-check">
+                    <label for="monthly">Monthly</label>
+                    <input type="radio" name="frequency" id ="monthly" value="monthly"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn-2">Submit</button>
+                </div>
+              </form>
+            </td>
+          </tr>
+        </table>
+        </div>
+        <div class="highlight" id="mk-forms">
+  <pre><code>&lt;form&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="username"&gt;Username:&lt;/label&gt;
+      &lt;input type="text" id="username" class="form-control" placeholder="Username"/&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="email"&gt;Email:&lt;/label&gt;
+      &lt;input type="email" id="email" class="form-control" placeholder="Email"/&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="password"&gt;Password:&lt;/label&gt;
+      &lt;input type="text" id="password" class="form-control" placeholder="Password"/&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;p&gt;Subscribe to our newsleetter to stay up to date.&lt;/p&gt;
+      &lt;div class="form-check"&gt;
+        &lt;label for="daily"&gt;Daily&lt;/label&gt;
+        &lt;input type="radio" name="frequency" id ="daily" value="daily" checked/&gt;
+      &lt;/div&gt;
+      &lt;div class="form-check"&gt;
+        &lt;label for="weekly"&gt;Weekly&lt;/label&gt;
+        &lt;input type="radio" name="frequency" id ="weekly" value="weekly"/&gt;
+      &lt;/div&gt;
+      &lt;div class="form-check"&gt;
+        &lt;label for="bi-weekly"&gt;Bi-Weekly&lt;/label&gt;
+        &lt;input type="radio" name="frequency" id ="bi-weekly" value="bi-weekly"/&gt;
+      &lt;/div&gt;
+      &lt;div class="form-check"&gt;
+        &lt;label for="monthly"&gt;Monthly&lt;/label&gt;
+        &lt;input type="radio" name="frequency" id ="monthly" value="monthly"/&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;button type="submit" class="btn-2"&gt;Submit&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+      <div id="inline-forms" class="main-content">
+        <h4>INLINE FORMS</h4>
+        <div class="container">
+        <table class="table">
+          <tr>
+            <th>EXAMPLE</th>
+          </tr>
+          <tr>
+            <td>
+              <form class="inline-form">
+                <div class="form-group">
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" class="form-control" placeholder="Username"/>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" class="form-control" placeholder="Email"/>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="text" id="password" class="form-control" placeholder="Password"/>
+                </div>
+                <div class="form-group">
+                  <p>Subscribe to our newsletter to stay up to date.</p>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <label for="daily">Daily</label>
+                    <input type="radio" name="frequency" id ="daily" value="daily" checked/>
+                  </div>
+                  <div class="form-check">
+                    <label for="weekly">Weekly</label>
+                    <input type="radio" name="frequency" id ="weekly" value="weekly"/>
+                  </div>
+                  <div class="form-check">
+                    <label for="bi-weekly">Bi-Weekly</label>
+                    <input type="radio" name="frequency" id ="bi-weekly" value="bi-weekly"/>
+                  </div>
+                  <div class="form-check">
+                    <label for="monthly">Monthly</label>
+                    <input type="radio" name="frequency" id ="monthly" value="monthly"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn-2">Submit</button>
+                </div>
+              </form>
+            </td>
+          </tr>
+        </table>
+        </div>
+        <div class="highlight" id="mk-inline-forms">
+  <pre><code>&lt;form class="inline-form"&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="username"&gt;Username:&lt;/label&gt;
+      &lt;input type="text" id="username" class="form-control" placeholder="Username"/&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="email"&gt;Email:&lt;/label&gt;
+      &lt;input type="email" id="email" class="form-control" placeholder="Email"/&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;label for="password"&gt;Password:&lt;/label&gt;
+      &lt;input type="text" id="password" class="form-control" placeholder="Password"/&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;p&gt;Subscribe to our newsleetter to stay up to date.&lt;/p&gt;
+      &lt;div class="form-check"&gt;
+        &lt;label for="daily"&gt;Daily&lt;/label&gt;
+        &lt;input type="radio" name="frequency" id ="daily" value="daily" checked/&gt;
+      &lt;/div&gt;
+      &lt;div class="form-check"&gt;
+        &lt;label for="weekly"&gt;Weekly&lt;/label&gt;
+        &lt;input type="radio" name="frequency" id ="weekly" value="weekly"/&gt;
+      &lt;/div&gt;
+      &lt;div class="form-check"&gt;
+        &lt;label for="bi-weekly"&gt;Bi-Weekly&lt;/label&gt;
+        &lt;input type="radio" name="frequency" id ="bi-weekly" value="bi-weekly"/&gt;
+      &lt;/div&gt;
+      &lt;div class="form-check"&gt;
+        &lt;label for="monthly"&gt;Monthly&lt;/label&gt;
+        &lt;input type="radio" name="frequency" id ="monthly" value="monthly"/&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-group"&gt;
+      &lt;button type="submit" class="btn-2"&gt;Submit&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+      <script src="js/app.js"></script>
+          
+</body>
+</html>
