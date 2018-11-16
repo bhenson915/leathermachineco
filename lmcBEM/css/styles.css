@@ -242,6 +242,26 @@ h4 {
   margin: 15px 0 0 0;
 }
 
+p {
+  font-size: 1em;
+  color: #1b1c32;
+}
+
+.subheading {
+  color: #c8995d;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+
+h2.heading {
+  margin: 0 0 0.5em;
+  line-height: .9;
+}
+
 .display-1, .display-2, .display-3, .display-4 {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
@@ -877,3 +897,69 @@ button {
 }
 
 /*---------------End of Products Components --------*/
+
+/*---------------Beginnning of Homepage --------*/
+
+.entry-header {
+  max-height: 620px;
+  overflow: hidden;
+}
+
+.entry-header img {
+  width: 100%;
+  height: auto;
+  margin-top: -360px;
+  display: block;
+}
+
+.homepage-products {
+  margin-top: 6em;
+}
+
+.homepage-products-container {
+  margin: 4em 0 4em 0;
+}
+
+.homepage-support-container {
+  display: grid;
+  grid-template-columns: 5% repeat(3, 1fr) 5%;
+  justify-items: center;
+  padding: 6em;
+}
+
+.homepage-support-container img {
+  width: 80px;
+  height: 80px;
+}
+
+.faqs {
+  grid-column: 2/3;
+}
+
+.videos {
+  grid-column: 3/4;
+}
+
+.forum {
+  grid-column: 4/5;
+}
+
+
+/*---------------End of Homepage --------*/
+
+/*---------------Beginning of Footer --------*/
+
+.footer {
+  background-color: #1b1c32;
+  padding: 10em;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*---------------End of Footer --------*/
