@@ -322,6 +322,10 @@ button:hover {
   transition: background 200ms;
 }
 
+.btn-secondary:hover{
+  background: #efe4d1;
+}
+
 .btn-cta {
   padding: .75rem 1.25rem;
   background: #efe4d1;
@@ -944,6 +948,27 @@ button {
   grid-column: 4/5;
 }
 
+/*---------------Beginning of About Us --------*/
+
+.homepage-about-container {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: 150px 280px 150px;
+}
+
+.about-info {
+  grid-column: 1/4;
+  grid-row: 2;
+  position: relative;
+}
+
+.about-photo {
+  grid-column: 3/6;
+  width: 100%;
+}
+
+/*---------------End of About Us --------*/
+
 
 /*---------------End of Homepage --------*/
 
@@ -951,15 +976,59 @@ button {
 
 .footer {
   background-color: #1b1c32;
-  padding: 10em;
+  padding: 4em;
 }
 
 .footer-content {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  grid-row-gap: 6em;
 
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.footer-content a {
+  font-size: 14px;
+  line-height: 1.5em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-newsletter {
+  grid-column: 5/7;
+}
+
+.footer-social {
+  grid-column: 2/3;
+}
+
+.footer-social img {
+  width: 30px;
+  height: 30px;
+  margin-right: 1em;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 14px;
+  grid-column: 5/7;
+  justify-self: end;
+}
+
+.subheading.social {
+  margin: 0.5em 0 0.5em 0;
+}
+
+#footer-email {
+  border-collapse: none;
+  padding: 5px;
+  width: 96%;
+}
+
+#footer-btn {
+  padding: 8px;
+  font-size: 14px;
 }
 
 /*---------------End of Footer --------*/
