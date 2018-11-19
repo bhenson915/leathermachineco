@@ -1,5 +1,16 @@
 $(function(){
 
+    /*Checkout Progress Bar*/
+
+    $("#btn-progress").click(function() {
+
+        var classes = ['step1', 'step2', 'step3', 'step4'];
+        $('#checkout-bar').each(function() {
+          this.className = classes[($.inArray(this.className, classes) + 1) % classes.length];
+        });
+    
+      });
+
     /* Navigation Script */
       var navToggler;
   
