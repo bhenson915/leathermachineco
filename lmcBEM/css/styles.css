@@ -362,6 +362,11 @@ button:hover {
   margin: 0;
   padding: 0;
 }
+
+.top-hat-cta p{
+  color: white;
+}
+
 .top-hat-container .search {
   width: 100%;
   position: relative;
@@ -704,6 +709,7 @@ header nav {
 .product-carousel-container {
   display: flex;
   justify-content: center;
+  overflow: hidden;
   width: 100%;
   max-width: 1480px;
   position: relative;
@@ -735,20 +741,43 @@ header nav {
 
 .arrow-right {
   position: absolute;
-  right: 20px;
-  top: 50%;
+  width: 40px;
+  top: 0;
+  right: 0;
   transition: color 300ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(to right, rgba(200,200,200,0) 0%,rgba(200,200,200,1) 100%);
+  transition: background 700ms;
 }
 
-.arrow-right:hover, .arrow-left:hover{
+.arrow-right:hover{
   color: #c8995d;
+  background: linear-gradient(to right, rgba(200,200,200,.5) 0%,rgba(200,200,200,1) 100%);
+  transition: background 700ms;
   transition: color 300ms;
 }
 
 .arrow-left {
   position: absolute;
-  left: 20px;
-  top: 50%;
+  width: 40px;
+  left: 0;
+  top: 0;
+  transition: color 300ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(to left, rgba(200,200,200,0) 0%,rgba(200,200,200,1) 100%);
+  transition: background 700ms;
+}
+
+.arrow-left:hover {
+  color: #c8995d;
+  background: linear-gradient(to left, rgba(200,200,200,.5) 0%,rgba(200,200,200,1) 100%);
+  transition: background 700ms;
   transition: color 300ms;
 }
 
@@ -987,7 +1016,7 @@ button {
 #checkout-bar.step3:after,
 #checkout-bar.step4:after {
   width: 25%;
-  background-color: #82a91c;
+  background-color: #1B1C32;
   z-index: 2;
   -webkit-transition: width 2s;
   /* Safari */
@@ -1011,50 +1040,6 @@ button {
   background: none;
 }
 
-.btn {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-
-.btn-success {
-  display: block;
-  min-width: 220px;
-  margin: 0 auto;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
-}
-
-.btn-success:hover {
-  color: #fff;
-  background-color: #449d44;
-  border-color: #398439;
-}
-
-.btn.focus,
-.btn:focus,
-.btn:hover {
-  color: #fff;
-  text-decoration: none;
-}
 
 .space {
   width: 100%;
@@ -1080,7 +1065,7 @@ button {
   display: block;
   height: 1em;
   width: 100%;
-  background-color: #099DF6;
+  background-color: #1B1C32;
 }
 
 .accordion dd,
@@ -1107,7 +1092,7 @@ button {
 
 .accordionTitle,
 .accordion__Heading {
-  background-color: #099DF6;
+  background-color: #1B1C32;
   /*text-align: center; */
   
   text-indent: 3px;
@@ -1118,7 +1103,7 @@ button {
   color: #fff;
   -webkit-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
-  border-bottom: 1px solid #30bb64;
+  border-bottom: 1px solid #1B1C32;
 }
 
 .accordionTitle:before,
@@ -1133,12 +1118,12 @@ button {
 
 .accordionTitle:hover,
 .accordion__Heading:hover {
-  background-color: #38CC70;
+  background-color: #1B1C32;
 }
 
 .accordionTitleActive,
 .accordionTitle.is-expanded {
-  background-color: #38CC70;
+  background-color: #1B1C32;
 }
 
 .accordionTitleActive:before,
@@ -1268,7 +1253,8 @@ button {
 /* background style for 'i' */
 
 .hint-icon {
-  background: #099DF6;
+  background: #1B1C32;
+  color: white;
   border-radius: 10px;
   cursor: pointer;
   display: inline-block;
@@ -1295,7 +1281,7 @@ button {
 .hint-description {
   display: none;
   background: #3b3b3b;
-  border: 1px solid #099DF6;
+  border: 1px solid #1B1C32;
   border-radius: 3px;
   font-size: 0.8em;
   color: #ffffff;
@@ -1318,7 +1304,8 @@ button {
   top: 15px;
   border-style: solid;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #099DF6;
+  border-color: transparent #1B1C32;
+  color: white;
 }
 /* overlay styling */
 
