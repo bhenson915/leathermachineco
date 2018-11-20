@@ -12,6 +12,7 @@ $conn = dbConnect();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Leather Machine Co. | BEM</title>
@@ -69,43 +70,6 @@ $conn = dbConnect();
             </ul>
         </nav>
     </header>
-
-    <?php
-        //send the query to the database and get results
-            ##You will have to edit this query using your table name and field names. For the exercise, you are going to use this script to list all link categories in your database table.
-
-            $sql = "SELECT Category FROM Category where CID = 3";
-
-            /* create a prepared statement */
-            $stmt = $conn->stmt_init();
-
-            if ($stmt->prepare($sql)) {
-
-                /* execute statement */
-                $stmt->execute();
-
-                /* bind result variables */
-                $stmt->bind_result($Category);
-
-
-                /* fetch values */
-                while ($stmt->fetch()) {
-                    print ("$Category<br/>\n");
-                }
-
-
-                /* close statement */
-                $stmt->close();
-
-            } else {
-                print ("query failed");
-            }
-
-        /* close connection */
-        $conn->close();
-
-
-    ?>
 
     <div class="products-main-container">
         <aside id="products-side-navigation">
@@ -288,237 +252,69 @@ $conn = dbConnect();
                 </ul>
             </section>
           </aside>
-        <div class="product-medium-container">
-          <div class="product-medium-card">
-            <div class="product-medium-image">
-              <img src="img/products/cobraMachines/class425.jpg" alt="">
-            </div>
-            <div class="product-medium-content">
-              <h3 class="product-medium-title">
-                King Cobra Class 4-25 With Electronic Positioning System
-              </h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eos.</p>
-              <div class="product-medium-rating king">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-              <button class="btn-cta">View More</button>
-            </div>
-          </div>
-          <div class="product-medium-card">
-            <div class="product-medium-image">
-              <img src="img/products/cobraMachines/leathermachineco-cobra-3-leather-sewing-machine.png" alt="">
-            </div>
-            <div class="product-medium-content">
-              <h3 class="product-medium-title">
-                  COBRA Class 3 Heavy Duty Leather Stitcher
-              </h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eos.</p>
-              <div class="product-medium-rating king">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-              <button class="btn-cta">View More</button>
-            </div>
-          </div>
-          <div class="product-medium-card">
-            <div class="product-medium-image">
-              <img src="img/products/cobraMachines/stevewithcorbamachines.png" alt="">
-            </div>
-            <div class="product-medium-content">
-              <h3 class="product-medium-title">
-                  COBRA Class 4-P Premium Package
-              </h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eos.</p>
-              <div class="product-medium-rating king">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-              <button class="btn-cta">View More</button>
-            </div>
-          </div>
-          <div class="product-medium-card">
-            <div class="product-medium-image">
-              <img src="img/products/cobraMachines/stevewithcorbamachines.png" alt="">
-            </div>
-            <div class="product-medium-content">
-              <h3 class="product-medium-title">
-                COBRA Class 4-S Standard Package
-              </h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eos.</p>
-              <div class="product-medium-rating king">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-              <button class="btn-cta">View More</button>
-            </div>
-          </div>
-          <div class="product-medium-card">
-              <div class="product-medium-image">
-                <img src="img/products/cobraMachines/class425.jpg" alt="">
-              </div>
-              <div class="product-medium-content">
-                <h3 class="product-medium-title">
-                  King Cobra Class 4-25 With Electronic Positioning System
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eos.</p>
-                <div class="product-medium-rating king">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-                <button class="btn-cta">View More</button>
-              </div>
-            </div>
-            <div class="product-medium-card">
-              <div class="product-medium-image">
-                <img src="img/products/cobraMachines/leathermachineco-cobra-3-leather-sewing-machine.png" alt="">
-              </div>
-              <div class="product-medium-content">
-                <h3 class="product-medium-title">
-                    COBRA Class 3 Heavy Duty Leather Stitcher
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eos.</p>
-                <div class="product-medium-rating king">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-                <button class="btn-cta">View More</button>
-              </div>
-            </div>
-            <div class="product-medium-card">
-              <div class="product-medium-image">
-                <img src="img/products/cobraMachines/stevewithcorbamachines.png" alt="">
-              </div>
-              <div class="product-medium-content">
-                <h3 class="product-medium-title">
-                    COBRA Class 4-P Premium Package
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eos.</p>
-                <div class="product-medium-rating king">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-                <button class="btn-cta">View More</button>
-              </div>
-            </div>
-            <div class="product-medium-card">
-              <div class="product-medium-image">
-                <img src="img/products/cobraMachines/stevewithcorbamachines.png" alt="">
-              </div>
-              <div class="product-medium-content">
-                <h3 class="product-medium-title">
-                  COBRA Class 4-S Standard Package
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eos.</p>
-                <div class="product-medium-rating king">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-                <button class="btn-cta">View More</button>
-              </div>
-            </div>
-            <div class="product-medium-card">
-                <div class="product-medium-image">
-                  <img src="img/products/cobraMachines/class425.jpg" alt="">
-                </div>
-                <div class="product-medium-content">
-                  <h3 class="product-medium-title">
-                    King Cobra Class 4-25 With Electronic Positioning System
-                  </h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eos.</p>
-                  <div class="product-medium-rating king">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                  </div>
-                  <button class="btn-cta">View More</button>
-                </div>
-              </div>
-              <div class="product-medium-card">
-                <div class="product-medium-image">
-                  <img src="img/products/cobraMachines/leathermachineco-cobra-3-leather-sewing-machine.png" alt="">
-                </div>
-                <div class="product-medium-content">
-                  <h3 class="product-medium-title">
-                      COBRA Class 3 Heavy Duty Leather Stitcher
-                  </h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eos.</p>
-                  <div class="product-medium-rating king">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                  </div>
-                  <button class="btn-cta">View More</button>
-                </div>
-              </div>
-              <div class="product-medium-card">
-                <div class="product-medium-image">
-                  <img src="img/products/cobraMachines/stevewithcorbamachines.png" alt="">
-                </div>
-                <div class="product-medium-content">
-                  <h3 class="product-medium-title">
-                      COBRA Class 4-P Premium Package
-                  </h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eos.</p>
-                  <div class="product-medium-rating king">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                  </div>
-                  <button class="btn-cta">View More</button>
-                </div>
-              </div>
-              <div class="product-medium-card">
-                <div class="product-medium-image">
-                  <img src="img/products/cobraMachines/stevewithcorbamachines.png" alt="">
-                </div>
-                <div class="product-medium-content">
-                  <h3 class="product-medium-title">
-                    COBRA Class 4-S Standard Package
-                  </h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eos.</p>
-                  <div class="product-medium-rating king">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                  </div>
-                  <button class="btn-cta">View More</button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <?php
+        //send the query to the database and get results
+            ##You will have to edit this query using your table name and field names. For the exercise, you are going to use this script to list all link categories in your database table.
+
+            $sql = "SELECT Title, Description, Price, Image, Specifications FROM Products where CatID = 1";
+
+            /* create a prepared statement */
+            $stmt = $conn->stmt_init();
+
+            if ($stmt->prepare($sql)) {
+
+                /* execute statement */
+                $stmt->execute();
+
+                /* bind result variables */
+                $stmt->bind_result($Title, $Description, $Price, $Image, $Specifications);
+
+
+                /* fetch values */
+                while ($stmt->fetch()) {
+                    print ("
+                    <div class='container'>
+                      <div class='product-single-container'>
+                        <div class='product-single-images'>
+                          <img src='$Image' alt=''>
+                        </div>
+                        <div class='product-single-description'>
+                          <h3>$Title</h3>
+                          <p>$Description</p><br>
+                          <span class='product-price'>$$Price</span><br/>
+                          <button class='btn-primary'>Add to Cart</button>
+                        </div>
+                      </div>
+                      <ul class='nav nav-tabs'>
+                        <li class='nav-item'>
+                          <a class='nav-link active' href='#'>Specifications</a>
+                        </li>
+                        <li class='nav-item'>
+                          <a class='nav-link' href='#'>Related Products</a>
+                        </li>
+                      </ul>
+                      <div class='product-single-specifications'>
+                      <p>$Specifications</p>
+                      </div>
+                    </div>");
+                }
+
+
+                /* close statement */
+                $stmt->close();
+
+            } else {
+                print ("query failed");
+            }
+
+        /* close connection */
+        $conn->close();
+
+    ?>
+        </div>
+        
+
+
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>

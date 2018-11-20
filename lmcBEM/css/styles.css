@@ -711,7 +711,6 @@ header nav {
   justify-content: center;
   overflow: hidden;
   width: 100%;
-  max-width: 1480px;
   position: relative;
   background: #eee;
   padding: 1em;
@@ -1082,12 +1081,6 @@ button {
 .accordion {
   position: relative;
   background-color: #eee;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 2em 0 2em 0;
 }
 
 .accordionTitle,
