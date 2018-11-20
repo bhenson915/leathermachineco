@@ -1337,8 +1337,10 @@ button {
 }
 
 .homepage-products-container {
-  margin: 4em 0 4em 0;
+  margin: 4em 0 6em 0;
 }
+
+/*---------------Beginning of Support --------*/
 
 .homepage-support-container {
   display: grid;
@@ -1364,31 +1366,79 @@ button {
   grid-column: 4/5;
 }
 
+/*---------------End of Support --------*/
+
 /*---------------Beginning of About Us --------*/
 
 .homepage-about-container {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(8,1fr);
   grid-template-rows: 150px 280px 150px;
+  margin: 6em 0 6em 0;
 }
 
 .about-info {
-  grid-column: 1/4;
+  grid-column: 1/6;
   grid-row: 2;
   position: relative;
 }
 
 .about-photo {
-  grid-column: 3/6;
+  grid-column: 4/9;
   width: 100%;
 }
 
-.about-info {
+.about-info-block {
   background: #efe4d1;
+  position: absolute;
+  top: 80px;
+  bottom: 60px;
+
+  grid-row-start: 2;
+  grid-row-end: span 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 /*---------------End of About Us --------*/
 
+/*---------------Beginning of Made With Cobra --------*/
+
+.homepage-custom-container {
+  margin-bottom: 6em;
+}
+
+/*---------------End of Made With Cobra --------*/
+
+/*---------------Beginning of Contact --------*/
+
+.homepage-contact-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-bottom: 6em;
+}
+
+.contact-middle,
+.contact-right {
+  justify-self: center;
+  margin: 2em 0 2em 0;
+  padding: 0.5em;
+}
+
+.contact-middle h4,
+.contact-right h4 {
+  float: right;
+}
+
+.contact-middle img,
+.contact-right img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5em;
+  padding: 0.5em;
+}
+
+/*---------------End of Contact --------*/
 
 /*---------------End of Homepage --------*/
 
