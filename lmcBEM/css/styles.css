@@ -1396,6 +1396,10 @@ button {
   width: 100%;
 }
 
+.about-info {
+  background: #efe4d1;
+}
+
 /*---------------End of About Us --------*/
 
 
@@ -1443,6 +1447,7 @@ button {
   font-size: 14px;
   grid-column: 5/7;
   justify-self: end;
+  margin: 0.5em 0 0.5em 0
 }
 
 .subheading.social {
