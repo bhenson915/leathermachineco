@@ -311,7 +311,69 @@ $conn = dbConnect();
         $conn->close();
 
     ?>
+
+    
         </div>
+        <div class="product-carousel-container">
+        <a href="#">
+          <div class="product-carousel-card">
+            <div class="product-carousel-image">
+              <img src="img/products/cobraMachines/class425.jpg" alt="">
+            </div>
+            <h4 class="product-carousel-title">COBRA Class 4-P Premium Package</h4>
+            <button class="btn-primary">Add to Cart</button>
+          </div>
+        </a>
+        <a href="#">
+          <div class="product-carousel-card">
+            <div class="product-carousel-image">
+              <img src="img/products/cobraMachines/class425.jpg" alt="">
+            </div>
+            <h4 class="product-carousel-title">COBRA Class 4-P Premium Package</h4>
+            <button class="btn-primary">Add to Cart</button>
+          </div>
+        </a>
+        <a href="#">
+          <div class="product-carousel-card">
+            <div class="product-carousel-image">
+              <img src="img/products/cobraMachines/class425.jpg" alt="">
+            </div>
+            <h4 class="product-carousel-title">COBRA Class 4-P Premium Package</h4>
+            <button class="btn-primary">Add to Cart</button>
+          </div>
+        </a>
+        <a href="#">
+          <div class="product-carousel-card">
+            <div class="product-carousel-image">
+              <img src="img/products/cobraMachines/class425.jpg" alt="">
+            </div>
+            <h4 class="product-carousel-title">COBRA Class 4-P Premium Package</h4>
+            <button class="btn-primary">Add to Cart</button>
+          </div>
+        </a>
+        <a href="#">
+          <div class="product-carousel-card">
+            <div class="product-carousel-image">
+              <img src="img/products/cobraMachines/class425.jpg" alt="">
+            </div>
+            <h4 class="product-carousel-title">COBRA Class 4-P Premium Package</h4>
+            <button class="btn-primary">Add to Cart</button>
+          </div>
+        </a>
+        <a href="#">
+          <div class="product-carousel-card">
+            <div class="product-carousel-image">
+              <img src="img/products/cobraMachines/class425.jpg" alt="">
+            </div>
+            <h4 class="product-carousel-title">COBRA Class 4-P Premium Package</h4>
+            <button class="btn-primary">Add to Cart</button>
+          </div>
+        </a>
+        <a href="#" class="arrow-left"><span><i class="fas fa-arrow-left fa-lg"></i></span></a> 
+        <a href="#" class="arrow-right"><span><i class="fas fa-arrow-right fa-lg"></i></span></a> 
+      </div>
+    </div>
+
         
 
 
