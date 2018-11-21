@@ -1318,11 +1318,24 @@ button {
   overflow: hidden;
 }
 
-.entry-header img {
+.entry-header {
   width: 100%;
-  height: auto;
-  margin-top: -360px;
-  display: block;
+  height: 740px;
+  /*margin-top: -360px;*/
+  background-image: url("../img/leathercraftsman.jpg");
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center bottom;
+}
+
+.entry-header-info {
+  margin: 26em 10em 10em 10em;
+}
+
+.heading.entry,
+.entry-description {
+  color: #fff;
 }
 
 .homepage-products {
@@ -1333,6 +1346,8 @@ button {
   margin: 4em 0 6em 0;
 }
 
+
+
 /*---------------Beginning of Support --------*/
 
 .homepage-support-container {
@@ -1340,6 +1355,18 @@ button {
   grid-template-columns: 5% repeat(3, 1fr) 5%;
   justify-items: center;
   padding: 6em;
+
+  text-align: center;
+}
+
+.text-link {
+  color: #C8995D;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  color: #1B1C32;
+  text-decoration: underline;
 }
 
 .homepage-support-container img {
@@ -1382,15 +1409,8 @@ button {
 }
 
 .about-info-block {
-  background: #efe4d1;
-  position: absolute;
-  top: 80px;
-  bottom: 60px;
-
-  grid-row-start: 2;
-  grid-row-end: span 2;
-  grid-column-start: 1;
-  grid-column-end: 4;
+  right: -60px;
+  background-color: #efe4d1;
 }
 
 /*---------------End of About Us --------*/
