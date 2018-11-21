@@ -704,6 +704,45 @@ header nav {
 
 /*----End of Product medium ---- */
 
+/*---- Product Single ---*/
+
+.product-single-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-single-images {
+  width: 30%;
+  padding: 2em;
+  box-sizing: border-box;
+}
+
+.product-single-images img{
+  width: 100%;
+}
+
+.product-single-description {
+  width: 70%;
+  padding: 2em;
+  box-sizing: border-box;
+}
+
+.product-single-description h3 {
+  margin: 0;
+}
+
+.product-price {
+  font-size: 24px;
+}
+
+.product-single-description button {
+  margin-top: 1em;
+}
+
+/* --- End of Product Single --*/
+
 /*----Product Carousel ---- */
 
 .product-carousel-container {
@@ -748,13 +787,13 @@ header nav {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: linear-gradient(to right, rgba(200,200,200,0) 0%,rgba(200,200,200,1) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
   transition: background 700ms;
 }
 
 .arrow-right:hover{
   color: #c8995d;
-  background: linear-gradient(to right, rgba(200,200,200,.5) 0%,rgba(200,200,200,1) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,.5) 0%,rgba(255,255,255,1) 100%);
   transition: background 700ms;
   transition: color 300ms;
 }
@@ -769,13 +808,13 @@ header nav {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: linear-gradient(to left, rgba(200,200,200,0) 0%,rgba(200,200,200,1) 100%);
+  background: linear-gradient(to left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
   transition: background 700ms;
 }
 
 .arrow-left:hover {
   color: #c8995d;
-  background: linear-gradient(to left, rgba(200,200,200,.5) 0%,rgba(200,200,200,1) 100%);
+  background: linear-gradient(to left, rgba(255,255,255,.5) 0%,rgba(255,255,255,1) 100%);
   transition: background 700ms;
   transition: color 300ms;
 }
