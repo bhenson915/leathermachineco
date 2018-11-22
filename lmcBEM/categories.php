@@ -257,7 +257,7 @@ $conn = dbConnect();
         //send the query to the database and get results
             ##You will have to edit this query using your table name and field names. For the exercise, you are going to use this script to list all link categories in your database table.
 
-            $sql = "SELECT Title, Description, Price, Image, Specifications FROM Products where CatID = 1";
+            $sql = "SELECT Category from Category";
 
             /* create a prepared statement */
             $stmt = $conn->stmt_init();
@@ -268,17 +268,17 @@ $conn = dbConnect();
                 $stmt->execute();
 
                 /* bind result variables */
-                $stmt->bind_result($Title, $Description, $Price, $Image, $Specifications);
+                $stmt->bind_result($Category);
 
                 /* fetch values */
                 while ($stmt->fetch()) {
                     print ("
                     <div class='container'>
-                      <div class='product-single-container'>
-                        <div class='product-single-images'>
+                      <div class='product-categories-container'>
+                        <div class='product-categories-image'>
                           <img src='$Image' alt=''>
                         </div>
-                        <div class='product-single-description'>
+                        <div class='product-categories-title'>
                           <h3>$Title</h3>
                           <p>$Description</p><br>
                           <span class='product-price'>$$Price</span><br/>
@@ -296,68 +296,6 @@ $conn = dbConnect();
                       <div class='product-single-specifications'>
                       <p>$Specifications</p>
                       </div>
-                      <div class='container'>
-                      <h3>Recommended for you</h3>
-                      <div class='product-carousel-container'>
-                        <a href='#'>
-                            <div class='product-carousel-card'>
-                            <div class='product-carousel-image'>
-                                <img src='img/products/cobraMachines/class425.jpg' alt=''>
-                            </div>
-                            <h4 class='product-carousel-title'>COBRA Class 4-P Premium Package</h4>
-                            <button class='btn-primary'>Add to Cart</button>
-                            </div>
-                        </a>
-                        <a href='#'>
-                            <div class='product-carousel-card'>
-                            <div class='product-carousel-image'>
-                                <img src='img/products/cobraMachines/class425.jpg' alt=''>
-                            </div>
-                            <h4 class='product-carousel-title'>COBRA Class 4-P Premium Package</h4>
-                            <button class='btn-primary'>Add to Cart</button>
-                            </div>
-                        </a>
-                        <a href='#'>
-                            <div class='product-carousel-card'>
-                            <div class='product-carousel-image'>
-                                <img src='img/products/cobraMachines/class425.jpg' alt=''>
-                            </div>
-                            <h4 class='product-carousel-title'>COBRA Class 4-P Premium Package</h4>
-                            <button class='btn-primary'>Add to Cart</button>
-                            </div>
-                        </a>
-                        <a href='#'>
-                            <div class='product-carousel-card'>
-                            <div class='product-carousel-image'>
-                                <img src='img/products/cobraMachines/class425.jpg' alt=''>
-                            </div>
-                            <h4 class='product-carousel-title'>COBRA Class 4-P Premium Package</h4>
-                            <button class='btn-primary'>Add to Cart</button>
-                            </div>
-                        </a>
-                        <a href='#'>
-                            <div class='product-carousel-card'>
-                            <div class='product-carousel-image'>
-                                <img src='img/products/cobraMachines/class425.jpg' alt=''>
-                            </div>
-                            <h4 class='product-carousel-title'>COBRA Class 4-P Premium Package</h4>
-                            <button class='btn-primary'>Add to Cart</button>
-                            </div>
-                        </a>
-                        <a href='#'>
-                            <div class='product-carousel-card'>
-                            <div class='product-carousel-image'>
-                                <img src='img/products/cobraMachines/class425.jpg' alt=''>
-                            </div>
-                            <h4 class='product-carousel-title'>COBRA Class 4-P Premium Package</h4>
-                            <button class='btn-primary'>Add to Cart</button>
-                            </div>
-                        </a>
-                        <a href='#' class='arrow-left'><span><i class='fas fa-arrow-left fa-lg'></i></span></a> 
-                        <a href='#' class='arrow-right'><span><i class='fas fa-arrow-right fa-lg'></i></span></a> 
-                        </div>
-                        </div>
-                        </div?
                     </div>");
                 }
 
