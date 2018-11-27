@@ -507,7 +507,7 @@ header nav {
 }
 #navigation ul {
   margin: 0;
-  padding: 0;
+  padding: 1em;
   list-style-type: none;
   position: absolute;
   display: none;
@@ -591,8 +591,8 @@ header nav {
 
   .navbar-toggler {
     display: block;
-    background-color: #dadada;
-    color: #000000;
+    background-color: #c8995d;
+    color: #ffffff;
     border: 0 none;
     font-size: 2em;
     padding: 0.5rem 1rem;
@@ -602,7 +602,7 @@ header nav {
     display: none;
     position: absolute;
     right: 0;
-    background-color: #dadada;
+    background-color: #ffffff;
     flex-flow: column wrap;
     -webkit-flex-flow: column wrap;
     width: 300px;
@@ -628,7 +628,6 @@ header nav {
 .products-main-container{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 #products-side-navigation {
@@ -1365,7 +1364,7 @@ button {
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
-  background-position: center bottom;
+  background-position: center center;
 }
 
 .entry-header-info {

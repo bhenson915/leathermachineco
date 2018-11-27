@@ -13,62 +13,62 @@ $conn = dbConnect();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/svg" href="img/lmc-logo.svg"/>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Leather Machine Co. | BEM</title>
 </head>
 <body>
     <div class="top-hat-container">
-      <div class="top-hat-cta">
+        <div class="top-hat-cta">
         <p>Free Ground Shipping on All Orders $30+ (Excludes HI, AK, PR)</p>
-      </div>
-      <div class="top-hat-search">
-        
-      </div>
-      <ul class="top-hat-user">
+        </div>
+        <div class="top-hat-search">
+
+        </div>
+        <ul class="top-hat-user">
         <li><a href="#">Login</a></li>
-        <span>|</span> 
-        <li><a href="#">Register</a></li> 
-        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li> 
+        <span>|</span>
+        <li><a href="#">Register</a></li>
+        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
         <div class="wrap">
             <div class="search">
-                <input type="text" class="searchTerm" placeholder="What are you looking for?">
-                <button type="submit" class="searchButton">
-                  <i class="fa fa-search"></i>
-              </button>
-            </div>
-          </div>
-      </ul>
-    </div>
-    
-    <header>
-        <h1 class="branding"><a href="index.html">Leather Machine Co. | BEM</a></h1>
-        <nav>
-            <button class="navbar-toggler closed" type="button" data-target="#navigation">
-                <i class="fa fa-bars"></i>
+            <input type="text" class="searchTerm" placeholder="What are you looking for?">
+            <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
             </button>
+            </div>
+        </div>
+        </ul>
+    </div>
 
-            <ul id="navigation">
-               <li class="dropdown-menu">
-                 <a href="products.html">Products</a>
-                 <ul class="dropdown-links">
-                   <li>Cobra Machines</li>
-                 </ul>
-               </li>
-               <li>
-                 <a href="support.html">Support</a>
-               </li> 
-               <li>
-                 <a href="madewithcobra.html">Made with Cobra</a>
-               </li>
-               <li>
-                 <a href="about.html">About</a>              
-               </li>
-               <li>
-                 <button class="btn-primary">Contact</button>
-               </li>
+    <header>
+        <h1 class="branding"><a href="../index.html">Leather Machine Co. | BEM</a></h1>
+        <nav>
+        <button class="navbar-toggler closed" type="button" data-target="#navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <ul id="navigation">
+            <li class="dropdown-menu">
+            <a href="../products.html">Products</a>
+            <ul class="dropdown-links">
+                <li>Cobra Machines</li>
             </ul>
+            </li>
+            <li>
+            <a href="../support.html">Support</a>
+            </li>
+            <li>
+            <a href="../madewithcobra.html">Made with Cobra</a>
+            </li>
+            <li>
+            <a href="../about.html">About</a>
+            </li>
+            <li>
+            <button class="btn-primary">Contact</button>
+            </li>
+        </ul>
         </nav>
     </header>
 

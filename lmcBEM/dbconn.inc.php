@@ -19,7 +19,6 @@ function dbConnect(){
 		printf("Error loading character set utf8: %s\n", mysqli_error($conn));
 		exit();
 	} else {
-		printf("Current character set: %s\n", mysqli_character_set_name($conn));
 	}
 
 	// return $conn to the fucntion call

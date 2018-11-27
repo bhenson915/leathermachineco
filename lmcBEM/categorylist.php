@@ -6,14 +6,13 @@ include("dbconn.inc.php"); // database connection
 $conn = dbConnect();
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" type="image/svg" href="img/lmc-logo.svg"/>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Leather Machine Co. | BEM</title>
@@ -31,9 +30,9 @@ $conn = dbConnect();
         <span>|</span> 
         <li><a href="#">Register</a></li> 
         <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li> 
-        <div class="top-hat-search">
-            <div >
-                <input type="text" placeholder="What are you looking for?">
+        <div class="wrap">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="What are you looking for?">
                 <button type="submit" class="searchButton">
                   <i class="fa fa-search"></i>
               </button>
@@ -253,6 +252,7 @@ $conn = dbConnect();
                 </ul>
             </section>
           </aside>
+
           <?php
         //send the query to the database and get results
             ##You will have to edit this query using your table name and field names. For the exercise, you are going to use this script to list all link categories in your database table.
@@ -273,91 +273,26 @@ $conn = dbConnect();
                 /* fetch values */
                 while ($stmt->fetch()) {
                     print ("
-                    <div class='container'>
-                      <div class='product-single-container'>
-                        <div class='product-single-images'>
+                    <div class='product-medium-container'>
+                      <div class='product-medium-card'>
+                        <div class='product-medium-image'>
                           <img src='img/products/cobraMachines/$Image' alt=''>
                         </div>
-                        <div class='product-single-description'>
-                          <h3>$Title</h3>
-                          <p>$Description</p><br>
-                          <span class='product-price'>$$Price</span><br/>
-                          <button class='btn-primary'>Add to Cart</button>
+                        <div class='product-medium-content'>
+                          <h3 class='product-medium-title'>
+                            $Title
+                          </h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, eos.</p>
+                          <div class='product-medium-rating king'>
+                            <i class='fas fa-star'></i>
+                            <i class='fas fa-star'></i>
+                            <i class='fas fa-star'></i>
+                            <i class='fas fa-star'></i>
+                            <i class='fas fa-star-half-alt'></i>
+                          </div>
+                          <button class='btn-cta'>View More</button>
                         </div>
                       </div>
-                      <ul class='nav nav-tabs'>
-                        <li class='nav-item'>
-                          <a class='nav-link active' href='#'>Specifications</a>
-                        </li>
-                        <li class='nav-item'>
-                          <a class='nav-link' href='#'>Related Products</a>
-                        </li>
-                      </ul>
-                      <div class='product-single-specifications'>
-                      <p>$Specifications</p>
-                      </div>
-                      <div class='container'>
-                      <h3>Recommended for you</h3>
-                      <div class='product-carousel-container'>
-                        <a href='#'>
-                            <div class='product-carousel-card'>
-                            <div class='product-carousel-image'>
-                                <img src='img/products/cobraMachines/class425.jpg' alt=''>
-                            </div>
-                            <h4 class='product-carousel-title'>COBRA Class 4-P Premium Package</h4>
-                            <button class='btn-primary'>Add to Cart</button>
-                            </div>
-                        </a>
-                        <a href='#'>
-                            <div class='product-carousel-card'>
-                            <div class='product-carousel-image'>
-                                <img src='img/products/cobraMachines/class425.jpg' alt=''>
-                            </div>
-                            <h4 class='product-carousel-title'>COBRA Class 4-P Premium Package</h4>
-                            <button class='btn-primary'>Add to Cart</button>
-                            </div>
-                        </a>
-                        <a href='#'>
-                            <div class='product-carousel-card'>
-                            <div class='product-carousel-image'>
-                                <img src='img/products/cobraMachines/class425.jpg' alt=''>
-                            </div>
-                            <h4 class='product-carousel-title'>COBRA Class 4-P Premium Package</h4>
-                            <button class='btn-primary'>Add to Cart</button>
-                            </div>
-                        </a>
-                        <a href='#'>
-                            <div class='product-carousel-card'>
-                            <div class='product-carousel-image'>
-                                <img src='img/products/cobraMachines/class425.jpg' alt=''>
-                            </div>
-                            <h4 class='product-carousel-title'>COBRA Class 4-P Premium Package</h4>
-                            <button class='btn-primary'>Add to Cart</button>
-                            </div>
-                        </a>
-                        <a href='#'>
-                            <div class='product-carousel-card'>
-                            <div class='product-carousel-image'>
-                                <img src='img/products/cobraMachines/class425.jpg' alt=''>
-                            </div>
-                            <h4 class='product-carousel-title'>COBRA Class 4-P Premium Package</h4>
-                            <button class='btn-primary'>Add to Cart</button>
-                            </div>
-                        </a>
-                        <a href='#'>
-                            <div class='product-carousel-card'>
-                            <div class='product-carousel-image'>
-                                <img src='img/products/cobraMachines/class425.jpg' alt=''>
-                            </div>
-                            <h4 class='product-carousel-title'>COBRA Class 4-P Premium Package</h4>
-                            <button class='btn-primary'>Add to Cart</button>
-                            </div>
-                        </a>
-                        <a href='#' class='arrow-left'><span><i class='fas fa-arrow-left fa-lg'></i></span></a> 
-                        <a href='#' class='arrow-right'><span><i class='fas fa-arrow-right fa-lg'></i></span></a> 
-                        </div>
-                        </div>
-                        </div?
                     </div>");
                 }
 
@@ -373,11 +308,7 @@ $conn = dbConnect();
         $conn->close();
 
     ?>
-        </div>
-
         
-
-
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
