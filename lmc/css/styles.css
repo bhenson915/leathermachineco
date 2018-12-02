@@ -301,6 +301,10 @@ h2.heading {
   color: #D4AF37;
 }
 
+.white-text {
+  color: white;
+}
+
 button {
   padding: .75rem 1.25rem;
   background: #1b1c32;
@@ -536,7 +540,7 @@ header nav {
   margin-top: -2.55rem;
 }
 
-#navigation ul li.dropdown-menu.open a,
+#navigation ul li.nav-dropdown-menu.open a,
 #navigation ul ul {
   background-color: #1f4170;
   color: #ffffff !important;
@@ -568,17 +572,17 @@ header nav {
   color: #1b1c32;
 }
 
-.dropdown-menu:hover .dropdown-links {
+.nav-dropdown-menu:hover .dropdown-links {
   display: block;
 }
 
-#navigation .dropdown-menu > a:after {
+#navigation .nav-dropdown-menu > a:after {
   content: "\f0da";
   padding-left: 1rem;
   font-family: FontAwesome;
 }
 
-#navigation .dropdown-menu.open > a:after {
+#navigation .nav-dropdown-menu.open > a:after {
   content: "\f0d7";
 }
 
@@ -615,7 +619,7 @@ header nav {
     margin: 0;
   }
 
-  #navigation .dropdown-menu > a:after {
+  #navigation .nav-dropdown-menu > a:after {
     position: absolute;
     right: 1rem;
   }
@@ -634,7 +638,7 @@ header nav {
   border-right: 1px solid #666;
   background: #1b1c32;
   color: white;
-  width: 15%;
+  width: 25%;
   padding: 2em;
 }
 
@@ -1554,3 +1558,21 @@ button {
 }
 
 /*---------------End of Footer --------*/
+
+.card-body {
+  background-color: #1B1C32;
+  color: white;
+}
+
+#cart-quantity {
+  color: white !important;
+  animation-name: quantity;
+  animation-duration: 700ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes quantity {
+  0% {font-size: 16px;}
+  50%{font-size: 24px;}
+  100%{font-size: 16px;}
+}

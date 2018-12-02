@@ -66,7 +66,7 @@ $conn = dbConnect();
             <a href="../about.html">About</a>
             </li>
             <li>
-            <button class="btn-primary">Contact</button>
+            <a href="contact.html"><button class="btn-primary">Contact</button></a> 
             </li>
         </ul>
         </nav>

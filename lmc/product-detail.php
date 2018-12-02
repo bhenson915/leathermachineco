@@ -1,260 +1,27 @@
 <?php
 // acquire shared info from other files
 include("dbconn.inc.php"); // database connection
+include("shared.php"); // shared components
 
 // make database connection
 $conn = dbConnect();
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" type="image/svg" href="img/lmc-logo.svg"/>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Leather Machine Co. | BEM</title>
-</head>
-<body>
-    <div class="top-hat-container">
-      <div class="top-hat-cta">
-        <p>Free Ground Shipping on All Orders $30+ (Excludes HI, AK, PR)</p>
-      </div>
-      <div class="top-hat-search">
-        
-      </div>
-      <ul class="top-hat-user">
-        <li><a href="#">Login</a></li>
-        <span>|</span> 
-        <li><a href="#">Register</a></li> 
-        <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li> 
-        <div class="top-hat-search">
-            <div >
-                <input type="text" placeholder="What are you looking for?">
-                <button type="submit" class="searchButton">
-                  <i class="fa fa-search"></i>
-              </button>
-            </div>
-          </div>
-      </ul>
-    </div>
-    
-    <header>
-        <h1 class="branding"><a href="index.html">Leather Machine Co. | BEM</a></h1>
-        <nav>
-            <button class="navbar-toggler closed" type="button" data-target="#navigation">
-                <i class="fa fa-bars"></i>
-            </button>
-
-            <ul id="navigation">
-               <li class="dropdown-menu">
-                 <a href="products.html">Products</a>
-                 <ul class="dropdown-links">
-                   <li>Cobra Machines</li>
-                 </ul>
-               </li>
-               <li>
-                 <a href="support.html">Support</a>
-               </li> 
-               <li>
-                 <a href="madewithcobra.html">Made with Cobra</a>
-               </li>
-               <li>
-                 <a href="about.html">About</a>              
-               </li>
-               <li>
-                 <button class="btn-primary">Contact</button>
-               </li>
-            </ul>
-        </nav>
-    </header>
+<?php
+    print($HTMLHeader);
+?>
+<?php
+    print($navigation);
+?>
 
     <div class="products-main-container">
-        <aside id="products-side-navigation">
-            <section>
-                <h4>COBRA Machines</h4>
-                <hr>
-                <ul>
-                    <a href="">
-                    <li>10 Ton Clicker</li>
-                    </a>
-                    <a href="">
-                    <li>5110 Post Machine</li>
-                    </a>
-                    <a href="">
-                    <li>5550 BB Single Needle Boot Top Machine</li>
-                    </a>
-                    <a href="">
-                    <li>8810 Post Machine</li>
-                    </a>
-                    <a href="">
-                    <li>AK 20 'PLUS' Leather Strap Cutting Machine</li>
-                    </a>
-                    <a href="">
-                    <li>Class 17 Walking Foot Machine</li>
-                    </a>
-                    <a href="">
-                    <li>Class 18 Compound Needle Feed (Triple Feed) Walking Foot Machine</li>
-                    </a>
-                    <a href="">
-                    <li>Class 20</li>
-                    </a>
-                    <a href="">
-                    <li>Class 26</li>
-                    </a>
-                    <a href="">
-                    <li>Class 29-18 Patch Machine</li>
-                    </a>
-                    <a href="">
-                    <li>Class 3 Heavy Duty Leather Stitcher</li>
-                    </a>
-                    <a href="">
-                    <li>Class 4-P Premium Package</li>
-                    </a>
-                    <a href="">
-                    <li>Class 4-S Standard Package</li>
-                    </a>
-                    <a href="">
-                    <li>MP Finisher</li>
-                    </a>
-                </ul>
     
-            </section>
-            <section>
-                <h4>Leather Splitters</h4>
-                <hr>
-                <ul>
-                    <a href="">
-                    <li>Class 14 Leather splitter Complete Unit</li>
-                    </a>
-                    <a href="">
-                    <li>Class 14 Leather Splitter Head Only</li>
-                    </a>
-                    <a href="">
-                    <li>Osborne 86 Splitter</li>
-                    </a>
-                </ul>
-            </section>
-            <section>
-                <h4>Motors</h4>
-                <hr>
-                <ul>
-                    <a href="">
-                    <li>Brushless Digital D.C. Servo Motor</li>
-                    </a>
-                    <a href="">
-                    <li>Brushless Positioner Motor With Synchronizer</li>
-                    </a>
-                </ul>
-            </section>
-            <section>
-                <h4>Reducers</h4>
-                <hr>
-                <ul>
-                    <a href="">
-                    <li>Speed Reducer</li>
-                    </a>
-                </ul>
-            </section>
-            <section>
-                <h4>Accessories</h4>
-                <hr>
-                <ul>
-                    <a href="">
-                        <li>Battery Powered Thread Burner</li>
-                    </a>
-                    <a href="">
-                        <li>Blanket Set</li>
-                    </a>
-                    <a href="">
-                        <li>Bobbin Case for Cobra Class 17, 18 & 5550B</li>
-                    </a>
-                    <a href="">
-                        <li>Bobbin for Cobra Class 17, 18 & 5550B</li>
-                    </a>
-                    <a href="">
-                        <li>Bobbin for Cobra Class 3, 4 & King Cobra 4-25</li>
-                    </a>
-                    <a href="">
-                        <li>Center toe Presser Foot</li>
-                    </a>
-                    <a href="">
-                        <li>Class 26 Work Platform</li>
-                    </a>
-                    <a href="">
-                        <li>Class 3 Work Platform</li>
-                    </a>
-                    <a href="">
-                        <li>Class 4 Work Platform</li>
-                    </a>
-                    <a href="">
-                        <li>Double Toe Presser Foot</li>
-                    </a>
-                    <a href="">
-                        <li>Fiebing's Glycerine Saddle Soap</li>
-                    </a>
-                    <a href="">
-                        <li>Heavy Duty Roller Edge Guide</li>
-                    </a>
-                    <a href="">
-                        <li>Holster Plate</li>
-                    </a>
-                    <a href="">
-                        <li>Hook for Cobra Class 17, 18 & 5550B</li>
-                    </a>
-                    <a href="">
-                        <li>Left Toe Presser Foot</li>
-                    </a>
-                    <a href="">
-                        <li>Magnetic Guide</li>
-                    </a>
-                </ul>
-            </section>
-            <section>
-                <h4>Needles and Thread</h4>
-                <hr>
-                <ul>
-                    <a href="">
-                        <li>Silicone Thread Lubricant</li>
-                    </a>
-                    <a href="">
-                        <li>Magnetic Thread Lubricator</li>
-                    </a>
-                    <a href="">
-                        <li>Premium Thread New Colors</li>
-                    </a>
-                    <a href="">
-                        <li>1lb Spool of Thread</li>
-                    </a>
-                    <a href="">
-                        <li>Pre-Wound Bobbins</li>
-                    </a>
-                    <a href="">
-                        <li>135 x 8 Leather Point Needles</li>
-                    </a>
-                    <a href="">
-                        <li>135 x 17 Round Point Needles</li>
-                    </a>
-                    <a href="">
-                        <li>7 x 3 Round Point Needles</li>
-                    </a>
-                    <a href="">
-                        <li>Premium Thread</li>
-                    </a>
-                    <a href="">
-                        <li>7 x 4 NW Leather Point Needles</li>
-                    </a>
-                    <a href="">
-                        <li>135 x 16 DIA, 18-23 Leather Point Needles</li>
-                    </a>
-                </ul>
-            </section>
-          </aside>
+        <?php
+        print($sideNavigation);
+        ?>
+
           <?php
-        //send the query to the database and get results
+            //send the query to the database and get results
             ##You will have to edit this query using your table name and field names. For the exercise, you are going to use this script to list all link categories in your database table.
 
             $sql = "SELECT Title, Description, Price, Image, Specifications FROM Products where CatID = 1";
@@ -278,12 +45,14 @@ $conn = dbConnect();
                         <div class='product-single-images'>
                           <img src='img/products/cobraMachines/$Image' alt=''>
                         </div>
-                        <div class='product-single-description'>
-                          <h3>$Title</h3>
+                        <div class='product-single-description simpleCart_shelfItem'>
+                          <h3 class='item_name'>$Title</h3>
                           <p>$Description</p><br>
-                          <span class='product-price'>$$Price</span><br/>
-                          <button class='btn-primary'>Add to Cart</button>
-                        </div>
+                          <label for='item_Quantity'>Quantity</label><br>
+                          <input type='text' value='1' name='item_Quantity' class='item_Quantity'><br>
+                          <span class='product-price item_price'>$$Price</span><br/>
+                          <a class='item_add btn btn-primary' href='javascript:;'> Add to Cart </a></p>
+                          </div>
                       </div>
                       <ul class='nav nav-tabs'>
                         <li class='nav-item'>
@@ -375,13 +144,46 @@ $conn = dbConnect();
     ?>
         </div>
 
+        <div class="simpleCart_shelfItem">
+            <h2 class="item_name"> Awesome T-shirt </h2>
+            <select class="item_size">
+                <option value="Small"> Small </option>
+                <option value="Medium"> Medium </option>
+                <option value="Large"> Large </option>
+            </select><br>
+            <input type="text" value="1" class="item_Quantity"><br>
+            <span class="item_price">$35.99</span><br>
+            <a class="item_add btn btn-primary" href="javascript:;"> Add to Cart </a>
+        </div>
+
+        <!-- create a checkout button -->
+        <a href="javascript:;" class="simpleCart_checkout">Checkout</a>
+        <!-- button to empty the cart -->
+        <a href="javascript:;" class="simpleCart_empty"></a>
+        <!-- show the cart -->
+        <div class="simpleCart_items"></div>
+        <!-- cart total (ex. $23.11)-->
+        <div class="simpleCart_total"></div>
+        <!-- cart quantity (ex. 3) -->
+        <div class="simpleCart_quantity"></div>
+        <!-- tax cost (ex. $1.38) -->
+        <div class="simpleCart_tax"></div>
+        <!-- tax rate (ex. %0.6) -->
+        <div class="simpleCart_taxRate"></div>
+        <!-- shipping (ex. $5.00) -->
+        <div class="simpleCart_shipping"></div>
+        <!-- grand total, including tax and shipping (ex. $28.49) -->
+        <div class="simpleCart_grandTotal"></div>
+
         
 
 
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-      <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/simpleCart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="js/app.js"></script>
           
 </body>
 </html>

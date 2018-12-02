@@ -65,7 +65,7 @@ $conn = dbConnect();
                  <a href="about.html">About</a>              
                </li>
                <li>
-                 <button class="btn-primary">Contact</button>
+               <a href="contact.html"><button class="btn-primary">Contact</button></a> 
                </li>
             </ul>
         </nav>
@@ -254,7 +254,7 @@ $conn = dbConnect();
           </aside>
 
           <?php
-        //send the query to the database and get results
+            //send the query to the database and get results
             ##You will have to edit this query using your table name and field names. For the exercise, you are going to use this script to list all link categories in your database table.
 
             $sql = "SELECT Title, Description, Price, Image, Specifications FROM Products where CatID = 1";
