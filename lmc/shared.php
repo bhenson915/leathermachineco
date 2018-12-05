@@ -26,58 +26,58 @@ $navigation =
     <p>Free Ground Shipping on All Orders $30+ (Excludes HI, AK, PR)</p>
   </div>
   <div class='top-hat-search'>
-    
+
   </div>
   <ul class='top-hat-user'>
     <li><a href='#'>Login</a></li>
-    <span>|</span> 
-    <li><a href='#'>Register</a></li> 
-    <li><a href='#'><i class='fas fa-shopping-cart'></i></a></li>
-    <li><div class='simpleCart_quantity' id='cart-quantity'></div></li>
+    <span>|</span>
+    <li><a href='#'>Register</a></li>
+    <li><a href='checkout/cart.html'><i class='fas fa-shopping-cart'></i></a></li>
     <div class='wrap'>
-    <div class='search'>
-      <input type='text' class='searchTerm' placeholder='What are you looking for?'>
-      <button type='submit' class='searchButton'>
-        <i class='fa fa-search'></i>
-      </button>
+      <div class='search'>
+        <input type='text' class='searchTerm' placeholder='What are you looking for?'>
+        <button type='submit' class='searchButton'>
+          <i class='fa fa-search'></i>
+        </button>
+      </div>
     </div>
-  </div>
   </ul>
 </div>
 
 <header>
-    <h1 class='branding'><a href='index.html'>Leather Machine Co. | BEM</a></h1>
-    <nav>
+  <h1 class='branding'><a href='index.html'>Leather Machine Co. | BEM</a></h1>
+  <nav>
     <button class='navbar-toggler closed' type='button' data-target='#navigation'>
-        <i class='fa fa-bars'></i>
+      <i class='fa fa-bars'></i>
     </button>
 
     <ul id='navigation'>
-        <li class='nav-dropdown-menu'>
-        <a href='#'>Products</a>
+      <li class='dropdown-menu'>
+        <a href='#'>Products <i class='fas fa-caret-down'></i></a>
         <ul class='dropdown-links'>
-            <li><a href='products.php?CatID=1'></a> Cobra Machines</li>
-            <li><a href='products.php?CatID=2'></a> Leather Splitters</li>
-            <li><a href='products.php?CatID=3'></a> Motors</li>
-            <li><a href='products.php?CatID=4'></a> Reducers</li>
-            <li><a href='products.php?CatID=5'></a> Accessories</li>
-            <li><a href='products.php?CatID=6'></a> Needles and Thread</li>
+          <li><a href='allproducts.php'>All Products</a></li>
+          <li><a href='cobra-product-list.php'>Cobra Machines</a> </li>
+          <li><a href='products.php?CatID=2'>Leather Splitters</a> </li>
+          <li><a href='products.php?CatID=3'>Motors</a> </li>
+          <li><a href='products.php?CatID=4'>Reducers</a> </li>
+          <li><a href='products.php?CatID=5'>Accessories</a> </li>
+          <li><a href='products.php?CatID=6'>Needles and Thread</a> </li>
         </ul>
-        </li>
-        <li>
+      </li>
+      <li>
         <a href='support.html'>Support</a>
-        </li>
-        <li>
+      </li>
+      <li>
         <a href='madewithcobra.html'>Made with Cobra</a>
-        </li>
-        <li>
+      </li>
+      <li>
         <a href='about.html'>About</a>
-        </li>
-        <li>
-            <a href='contact.html'><button class='btn-primary'>Contact</button></a> 
-        </li>
+      </li>
+      <li>
+          <a href='contact.html'><button class='btn-primary'>Contact</button></a> 
+      </li>
     </ul>
-    </nav>
+  </nav>
 </header>"
 
 ?>
@@ -305,51 +305,53 @@ $sideNavigation = "
 <?php
 //Page Footer
 $PageFooter = "
-<footer>
-    <div class='container-fluid p-5'>
-        <div class='footer-links'>
-            <div class='row'>
-                <div class='col'>
-                    <h4 class='orange'>Need Help?</h4>
-                    <ul class='footer-links-list'>
-                        <li><a href='#'>Contact Us</a></li>
-                        <li><a href='#'>Track Order</a></li>
-                        <li><a href='#'>Shipping & Returns</a></li>
-                        <li><a href='#'>Tech Articles</a></li>
-                        <li><a href='#'>Installation Instructions</a></li>
-                        <li><a href='#'>Regulatory Compliance</a></li>
-                        <li><a href='#'>Promo Exclusions</a></li>
-                    </ul>
-                </div>
-                <div class='col'>
-                    <h4 class='orange'>Quick Links</h4>
-                    <ul class='footer-links-list'>
-                        <li><a href='#'>My Account</a></li>
-                        <li><a href='#'>Gift Cards</a></li>
-                        <li><a href='#'>Catalog Request</a></li>
-                        <li><a href='#'>ATK Answers</a></li>
-                        <li><a href='#'>Digital Catalog</a></li>
-                        <li><a href='#'>E-Mail Signup</a></li>
-                    </ul>
-                </div>
-                <div class='col'>
-                    <h4 class='orange'>About Us</h4>
-                    <ul class='footer-links-list'>
-                        <li><a href='#'>Contact Us</a></li>
-                        <li><a href='#'>Track Order</a></li>
-                        <li><a href='#'>Shipping & Returns</a></li>
-                        <li><a href='#'>Tech Articles</a></li>
-                        <li><a href='#'>Installation Instructions</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>        
+<div class='footer'>
+    <div class='footer-content'>
+      <div class='footer-products'>
+        <p class='subheading'>Products</p>
+        <a href='#'>Most Popular Items</a><br>
+        <a href='#'>Cobra Machines</a><br>
+        <a href='#'>Other Machines</a><br>
+        <a href='#'>Motors/Reducers</a><br>
+        <a href='#'>Accessories</a>
+        </li>
+      </div>
+      <div class='footer-support'>
+        <p class='subheading'>Support</p>
+        <a href='#'>FAQs</a><br>
+        <a href='#'>Videos/Tips</a><br>
+        <a href='#'>Forum</a>
+      </div>
+      <div class='footer-info'>
+        <p class='subheading'>Info</p>
+        <a href='#'>About Us</a><br>
+        <a href='#'>Contact</a>
+      </div>
+      <div class='footer-account'>
+        <p class='subheading'>Account</p>
+        <a href='#'>Log In</a><br>
+        <a href='#'>Register</a>
+      </div>
+      <div class='footer-newsletter'>
+        <p class='subheading'>Subscribe to our newsletter</p>
+        <input type='email' name='email' id='footer-email' placeholder='Email'><br><br>
+        <button type='button' class='btn-secondary' id='footer-btn'>Submit</button>
+      </div>
+      <p class='subheading social'>Connect with us</p>
+      <div class='footer-social'>
+        <img src='img/icons/facebook.png'>
+        <img src='img/icons/twitter.png'>
+        <img src='img/icons/youtube.png'>
+      </div>
+      <p class='copyright'>© 2018 Leather Machine Co</p>
     </div>
-</footer>
-<script
-  src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous'></script>
-<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
-<script src='js/app.js'</script>
+  </div>
+
+    <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js'></script>
+    <script src='js/app.js'></script>
 
 ";
 ?>

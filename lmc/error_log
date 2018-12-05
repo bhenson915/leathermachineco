@@ -6,3 +6,37 @@
 [22-Nov-2018 02:37:26 UTC] PHP Deprecated:  mysql_set_charset(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmcBEM/test.php on line 261
 [22-Nov-2018 02:37:26 UTC] PHP Warning:  mysql_set_charset(): Access denied for user ''@'localhost' (using password: NO) in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmcBEM/test.php on line 261
 [22-Nov-2018 02:37:26 UTC] PHP Warning:  mysql_set_charset(): A link to the server could not be established in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmcBEM/test.php on line 261
+[03-Dec-2018 18:52:23 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:52:23 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:52:23 UTC] PHP Warning:  include(): Failed opening 'access.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:52:41 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:52:41 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:52:41 UTC] PHP Warning:  include(): Failed opening 'access.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:53:27 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:53:27 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:53:27 UTC] PHP Warning:  include(): Failed opening 'access.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:53:39 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:53:39 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:53:39 UTC] PHP Warning:  include(): Failed opening 'access.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:54:36 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:54:36 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:54:36 UTC] PHP Warning:  include(): Failed opening 'access.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:54:48 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:54:48 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:54:48 UTC] PHP Warning:  include(): Failed opening 'access.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:55:19 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:55:19 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:55:19 UTC] PHP Warning:  include(): Failed opening 'access.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:55:36 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:55:36 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:55:36 UTC] PHP Warning:  include(): Failed opening 'access.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 19:26:51 UTC] PHP Warning:  mysqli_stmt::close(): invalid object or resource mysqli_stmt
+ in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_form.php on line 95
+[05-Dec-2018 02:11:31 UTC] PHP Warning:  mysqli_stmt::bind_result(): Number of bind variables doesn't match number of fields in prepared statement in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/cobra-product-detail.php on line 45
+[05-Dec-2018 02:53:56 UTC] PHP Warning:  mysqli_stmt::bind_result(): Number of bind variables doesn't match number of fields in prepared statement in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/cobra-product-list.php on line 48
+[05-Dec-2018 03:13:19 UTC] PHP Warning:  mysqli_stmt::close(): invalid object or resource mysqli_stmt
+ in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_form.php on line 62
+[05-Dec-2018 03:13:19 UTC] PHP Warning:  mysqli_stmt::close(): invalid object or resource mysqli_stmt
+ in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_form.php on line 95
+[05-Dec-2018 03:26:41 UTC] PHP Warning:  mysqli_stmt::close(): invalid object or resource mysqli_stmt
+ in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_form.php on line 94
