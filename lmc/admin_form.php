@@ -31,7 +31,7 @@ if (isset($_GET['PID'])) { // note that the spelling 'pid' is based on the query
 			
 		//compose a select query
 		
-		$sql = "SELECT Title, Price, Image, Description, Specification, CatID FROM Products WHERE PID = ?"; 
+		$sql = "SELECT Title, Price, Image, Description, Specifications, CatID FROM Products WHERE PID = ?"; 
 			
 		$stmt = $conn->stmt_init();
 

@@ -31,7 +31,6 @@ function confirmDel(Title, PID) {
 }
 </script>
 
-<main>
 <?php
     
 // Retrieve tag options (tag names) and put it in an array for later use
@@ -55,7 +54,7 @@ function confirmDel(Title, PID) {
 		$tblRows = $tblRows."
 		<tr>
 			<td>$Title</td>
-			<td><img src='img/products/$Image' alt='' class='admin-list-img'>
+			<td><img class='admin-list-image' src='img/products/$Image' alt='' class='admin-list-img'>
 			</td>
 			<td>$Description</td>
 			<td>$Category</td>
@@ -98,7 +97,6 @@ $conn->close();
 	<h3>Administrative List</h3>
 	<?php echo $output ?>
 </div>
-</main>
 
 <div class="footer">
     <div class="footer-content">

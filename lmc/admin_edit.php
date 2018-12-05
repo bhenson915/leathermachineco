@@ -13,7 +13,7 @@ if (isset($_POST['Submit'])) {
 	//validate user input
 	
 	// set up the required array 
-	$required = array("Title", "Price", "Image", "Description", "Specificaitons", "CatID"); // note that, in this array, the spelling of each item should match the form field names
+	$required = array("Title", "Price", "Image", "Description", "Specifications", "CatID"); // note that, in this array, the spelling of each item should match the form field names
 
 	// set up the expected array
 	$expected = array("Title", "Price", "Image", "Description", "Specifications", "CatID", "PID"); // again, the spelling of each item should match the form field names
@@ -80,7 +80,7 @@ if (isset($_POST['Submit'])) {
 
 				// Note: user input could be an array, the code to deal with array values should be added before the bind_param statment.
 
-				$stmt->bind_param('sissssii', $Title, $Price, $Image, $Description, $Specifications, $CatID, $PID);
+				$stmt->bind_param('sisssii', $Title, $Price, $Image, $Description, $Specifications, $CatID, $PID);
 
 				$stmt_prepared = 1;// set up a variable to signal that the query statement is successfully prepared.
 			} else {
@@ -91,18 +91,17 @@ if (isset($_POST['Submit'])) {
 			// no existing PID ==> this means no existing record to deal with, then it must be a new record ==> use an insert query
 			// $sql = "Insert Into atkProducts (Title, Price, Image, Description, Specifications, CatId) values (?, ?, ?, ?, ?, ?, ?)";
 
-			$sql = "Insert Into Products (Title, Price, Image, Description, Specifications, CatID) values (?, ?, ?, ?, ?, ?, ?)";
+			$sql = "Insert Into Products (Title, Price, Image, Description, Specifications, CatID) values (?, ?, ?, ?, ?, ?)";
 
 			if($stmt->prepare($sql)){
 
 				// Note: user input could be an array, the code to deal with array values should be added before the bind_param statement.
 
-				$stmt->bind_param('sissssi', $Title, $Price, $Image, $Description, $Specifications, $CatID);
+				$stmt->bind_param('sisssi', $Title, $Price, $Image, $Description, $Specifications, $CatID);
 				$stmt_prepared = 1; // set up a variable to signal that the query statement is successfully prepared.
 			}
 		}
 		
-		print ($stmt_prepared);
 
 		if ($stmt_prepared == 1){
 			if ($stmt->execute()){

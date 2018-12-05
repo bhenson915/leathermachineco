@@ -30,7 +30,7 @@ if (isset($_GET['PID'])) { // note that the spelling 'PID' is based on the query
 	// vaPIDate the product id -- check to see if it is greater than 0
 		if ($PID>0 ){
 			//compose the query
-			$sql = "DELETE from atkProducts WHERE PID = ?"; // note that the spelling "LinkID" is based on the field name in the database product table.
+			$sql = "DELETE from Products WHERE PID = ?"; // note that the spelling "LinkID" is based on the field name in the database product table.
 
 			$stmt = $conn->stmt_init();
 
