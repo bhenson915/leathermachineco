@@ -14,7 +14,7 @@ $HTMLHeader =
     <link rel='stylesheet' href='css/normalize.css'>
     <link rel='stylesheet' href='css/styles.css'>
 
-    <title>Leather Machine Co. | BEM</title>
+    <title>Leather Machine Co. | Home of the Cobra</title>
 </head>
 <body>
 ";
@@ -29,7 +29,7 @@ $navigation =
 
   </div>
   <ul class='top-hat-user'>
-    <li><a href='#'>Login</a></li>
+    <li><a href='admin_list.php'>Login</a></li>
     <span>|</span>
     <li><a href='#'>Register</a></li>
     <li><a href='checkout/cart.html'><i class='fas fa-shopping-cart'></i></a></li>
@@ -57,11 +57,11 @@ $navigation =
         <ul class='dropdown-links'>
           <li><a href='allproducts.php'>All Products</a></li>
           <li><a href='cobra-product-list.php'>Cobra Machines</a> </li>
-          <li><a href='products.php?CatID=2'>Leather Splitters</a> </li>
-          <li><a href='products.php?CatID=3'>Motors</a> </li>
-          <li><a href='products.php?CatID=4'>Reducers</a> </li>
-          <li><a href='products.php?CatID=5'>Accessories</a> </li>
-          <li><a href='products.php?CatID=6'>Needles and Thread</a> </li>
+          <li><a href='splitter-product-list.php'>Leather Splitters</a> </li>
+          <li><a href='motors-product-list.php'>Motors</a> </li>
+          <li><a href='reducers-product-list.php'>Reducers</a> </li>
+          <li><a href='accessories-product-list.php'>Accessories</a> </li>
+          <li><a href='needle-product-list.php'>Needles and Thread</a> </li>
         </ul>
       </li>
       <li>
@@ -96,19 +96,19 @@ $sideNavigation = "
             <div id='collapseOne' class='collapse show' aria-labelledby='headingOne' data-parent='#accordion'>
             <div class='card-body'>
             <ul>
-                <a href=''>
+                <a href='cobra-product-detail.php?PID=4'>
                 <li>10 Ton Clicker</li>
                 </a>
-                <a href=''>
+                <a href='cobra-product-detail.php?PID=5'>
                 <li>5110 Post Machine</li>
                 </a>
-                <a href=''>
+                <a href='cobra-product-detail.php?PID=6'>
                 <li>5550 BB Single Needle Boot Top Machine</li>
                 </a>
-                <a href=''>
+                <a href='cobra-product-detail.php?PID=7'>
                 <li>8810 Post Machine</li>
                 </a>
-                <a href=''>
+                <a href='cobra-product-detail.php?PID=8'>
                 <li>AK 20 'PLUS' Leather Strap Cutting Machine</li>
                 </a>
                 <a href=''>
@@ -129,10 +129,10 @@ $sideNavigation = "
                 <a href=''>
                 <li>Class 3 Heavy Duty Leather Stitcher</li>
                 </a>
-                <a href=''>
+                <a href='cobra-product-detail.php?PID=2'>
                 <li>Class 4-P Premium Package</li>
                 </a>
-                <a href=''>
+                <a href='cobra-product-detail.php?PID=1'>
                 <li>Class 4-S Standard Package</li>
                 </a>
                 <a href=''>

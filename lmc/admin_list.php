@@ -36,7 +36,7 @@ function confirmDel(Title, PID) {
 // Retrieve tag options (tag names) and put it in an array for later use
     
 // Retrieve the link & category info using a join query
-	$sql = "SELECT Products.Title, Products.Price, Products.Image, Products.Description, Products.PID, Products.CatID, Category.Category FROM Products, Category WHERE Products.CatID = Category.CatID ORDER BY Products.CatID ASC ";
+	$sql = "SELECT Products.Title, Products.Price, Products.Image, Products.Description, Products.PID, Products.CatID, Category.Category FROM Products, Category WHERE Products.CatID = Category.CatID ORDER BY Products.CatID";
 
 	$stmt = $conn->stmt_init();
 
@@ -98,47 +98,9 @@ $conn->close();
 	<?php echo $output ?>
 </div>
 
-<div class="footer">
-    <div class="footer-content">
-      <div class="footer-products">
-        <p class="subheading">Products</p>
-        <a href="#">Most Popular Items</a><br>
-        <a href="#">Cobra Machines</a><br>
-        <a href="#">Other Machines</a><br>
-        <a href="#">Motors/Reducers</a><br>
-        <a href="#">Accessories</a>
-        </li>
-      </div>
-      <div class="footer-support">
-        <p class="subheading">Support</p>
-        <a href="#">FAQs</a><br>
-        <a href="#">Videos/Tips</a><br>
-        <a href="#">Forum</a>
-      </div>
-      <div class="footer-info">
-        <p class="subheading">Info</p>
-        <a href="#">About Us</a><br>
-        <a href="#">Contact</a>
-      </div>
-      <div class="footer-account">
-        <p class="subheading">Account</p>
-        <a href="#">Log In</a><br>
-        <a href="#">Register</a>
-      </div>
-      <div class="footer-newsletter">
-        <p class="subheading">Subscribe to our newsletter</p>
-        <input type="email" name="email" id="footer-email" placeholder="Email"><br><br>
-        <button type="button" class="btn-secondary" id="footer-btn">Submit</button>
-      </div>
-      <p class="subheading social">Connect with us</p>
-      <div class="footer-social">
-        <img src="img/icons/facebook.png">
-        <img src="img/icons/twitter.png">
-        <img src="img/icons/youtube.png">
-      </div>
-      <p class="copyright">© 2018 Leather Machine Co</p>
-    </div>
-  </div>
+<?php
+	print($PageFooter);
+?>
 
 </body>
 </html>
