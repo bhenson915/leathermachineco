@@ -42,6 +42,7 @@ main {
 
 .table {
   border-collapse: collapse;
+  width: 70%;
   margin: 1em 0;
   padding: 0;
   background-color: #ffffff;
@@ -61,10 +62,6 @@ main {
   padding: 1em;
   margin: 0 auto;
   box-sizing: border-box;
-}
-
-.admin-list-image {
-  width: 150px;
 }
 
 .highlight {
@@ -323,16 +320,9 @@ button:hover {
 
 .btn-primary {
   padding: .75rem 1.25rem;
-  background-color: #1b1c32;
-  border-color: transparent;
+  background: #1b1c32;
   color: white;
   text-transform: uppercase;
-  transition: background 200ms;
-}
-
-.btn-primary:hover {
-  background-color: #c8995d;
-  border-color: transparent;
   transition: background 200ms;
 }
 
@@ -367,7 +357,7 @@ button:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 0.5rem 1rem;
   box-sizing: border-box;
   /*Resize the wrap to see the search bar change!*/
 }
@@ -384,12 +374,13 @@ button:hover {
 .top-hat-container .search {
   width: 100%;
   position: relative;
+  display: inline-block;
 }
 .top-hat-container .searchTerm {
   float: left;
   width: 100%;
   border: 3px solid #efe4d1;
-  padding: 1em;
+  padding: 5px;
   height: 20px;
   outline: none;
   color: #1b1c32;
@@ -399,8 +390,9 @@ button:hover {
 }
 .top-hat-container .searchButton {
   position: absolute;
+  right: -50px;
   width: 40px;
-  height: 38px;
+  height: 36px;
   padding: 0;
   border: 1px solid #efe4d1;
   background: #c8995d;
@@ -416,10 +408,8 @@ button:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0 50px 0 0;
+  margin-right: 50px;
 }
-
-
 .top-hat-container .top-hat-user span {
   color: white;
 }
@@ -550,7 +540,7 @@ header nav {
   margin-top: -2.55rem;
 }
 
-#navigation ul li.nav-dropdown-menu.open a,
+#navigation ul li.dropdown-menu.open a,
 #navigation ul ul {
   background-color: #1f4170;
   color: #ffffff !important;
@@ -577,23 +567,22 @@ header nav {
 .dropdown-links {
   display: none;
   background: white;
-  width: 250px;
 }
 .dropdown-links li a:hover {
   color: #1b1c32;
 }
 
-.nav-dropdown-menu:hover .dropdown-links {
+.dropdown-menu:hover .dropdown-links {
   display: block;
 }
 
-#navigation .nav-dropdown-menu > a:after {
+#navigation .dropdown-menu > a:after {
   content: "\f0da";
   padding-left: 1rem;
   font-family: FontAwesome;
 }
 
-#navigation .nav-dropdown-menu.open > a:after {
+#navigation .dropdown-menu.open > a:after {
   content: "\f0d7";
 }
 
@@ -630,19 +619,10 @@ header nav {
     margin: 0;
   }
 
-  #navigation .nav-dropdown-menu > a:after {
+  #navigation .dropdown-menu > a:after {
     position: absolute;
     right: 1rem;
   }
-}
-
-.dropdown-menu{
-  position: relative;
-  padding: 0;
-  display: block;
-  background-color: transparent;
-  border: 1px solid transparent;
-  min-width: 1em;
 }
 
 /*--------------- End of Navigation --------*/
@@ -658,7 +638,7 @@ header nav {
   border-right: 1px solid #666;
   background: #1b1c32;
   color: white;
-  width: 25%;
+  width: 15%;
   padding: 2em;
 }
 
@@ -682,7 +662,7 @@ header nav {
 }
 
 #products-side-navigation li {
-  line-height: 2.25em;
+  line-height: 1.5em;
   font-size: 14px;
   margin-bottom: .25rem;
 }
@@ -723,32 +703,6 @@ header nav {
 
 .product-medium-content button{
   margin-top: 1em;
-}
-
-.product-header-content {
-  color: white;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 2em;
-}
-
-.product-header-content h1{
-  color: white;
-}
-
-#cobra-machines-header {
-  background: url('../img/leather5.jpg') center center;
-  height: 30vh;
-}
-
-.highlight-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  flex-direction: row;
-  box-sizing: border-box;
 }
 
 /*----End of Product medium ---- */
@@ -1604,49 +1558,6 @@ button {
 }
 
 /*---------------End of Footer --------*/
-
-.card-body {
-  background-color: #1B1C32;
-  color: white;
-}
-
-#cart-quantity {
-  color: white !important;
-  animation-name: quantity;
-  animation-duration: 700ms;
-  animation-fill-mode: forwards;
-}
-
-@keyframes quantity {
-  0% {font-size: 16px;}
-  50%{font-size: 24px;}
-  100%{font-size: 16px;}
-}
-
-.breadcrumb {
-  background-color: transparent;
-}
-
-.breadcrumb-item a {
-  color: #1b1c32;
-}
-
-.breadcrumb-item a:hover {
-  color: #EFE4D1;
-}
-
-.thumbnail {
-	overflow: hidden;
-}
-
-.thumbnail img{
-	width: 200px;
-}
-
-.search-result {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	border: 1px solid #343a40;
-	padding: 1em;
+.collapse.show {
+  visibility: visible;
 }

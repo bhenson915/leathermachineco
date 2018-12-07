@@ -21,12 +21,13 @@ print $HTMLHeader;
     ?>
 
     <div class='container-fluid center mb-3'>
+        
 
-          <?php
-            //send the query to the database and get results
+         <?php
+        //send the query to the database and get results
             ##You will have to edit this query using your table name and field names. For the exercise, you are going to use this script to list all link categories in your database table.
 
-            $sql = "SELECT Category, CatID, Image FROM Category";
+            $sql = "SELECT Title, Description, Price, Image, PID FROM Products where CatID = 5";
 
             /* create a prepared statement */
             $stmt = $conn->stmt_init();
@@ -37,33 +38,45 @@ print $HTMLHeader;
                 $stmt->execute();
 
                 /* bind result variables */
-                $stmt->bind_result($Category, $CatID, $Image);
-                print ("
-                <nav aria-label='breadcrumb'>
-                      <ol class='breadcrumb'>
-                          <li class='breadcrumb-item'><a href='index.php'>Home</a></li>
-                          <li class='breadcrumb-item'><a href='allproducts.php'>Products</a></li>
-                          <li class='breadcrumb-item'><a href='cobra-product-list.php'>Cobra Machines</a></li>
-                      </ol>
-                  </nav>
-                  <h1>Categories</h1>
-                  <div class='row'>");
+                $stmt->bind_result($Title, $Description, $Price, $Image, $PID);
                 /* fetch values */
+                print ("
+                  <nav aria-label='breadcrumb'>
+                        <ol class='breadcrumb'>
+                            <li class='breadcrumb-item'><a href='index.php'>Home</a></li>
+                            <li class='breadcrumb-item'><a href='allproducts.php'>Products</a></li>
+                            <li class='breadcrumb-item'><a href='accessories-product-list.php'>Accessories</a></li>
+                        </ol>
+                    </nav>
+                    <h1>Accessories</h1>
+                    <div class='row'>");
                 while ($stmt->fetch()) {
                     print ("
+                    <a href='accessories-product-detail.php?PID=$PID'>
                       <div class='product-medium-card'>
                         <div class='product-medium-image'>
-                          <img src='img/categories/$Image' alt=''>
+                          <img src='img/products/$Image' alt=''>
                         </div>
                         <div class='product-medium-content'>
                           <h3 class='product-medium-title'>
-                            $Category
+                            $Title
                           </h3>
+                          <div class='product-medium-rating king'>
+                            <i class='fas fa-star'></i>
+                            <i class='fas fa-star'></i>
+                            <i class='fas fa-star'></i>
+                            <i class='fas fa-star'></i>
+                            <i class='fas fa-star-half-alt'></i>
+                          </div>
                           <button class='btn-cta'>View More</button>
                         </div>
                       </div>
+                      </a>
+
                     ");
                 }
+
+                print ("</div>");
 
 
                 /* close statement */
@@ -77,14 +90,10 @@ print $HTMLHeader;
         $conn->close();
 
     ?>
+
     </div>
         </div>
-        </div>
-        
 
-      <?php
-        print($PageFooter);
-      ?>
-          
+<?php print $PageFooter; ?>
 </body>
 </html>
