@@ -902,7 +902,7 @@ header nav {
 }
 
 .card-two:nth-last-child(1) {
-	
+
 	padding-right: 1rem;
     width: 90%;
 	left: 5%;
@@ -913,7 +913,7 @@ header nav {
 	border: 1px solid #1B1C32;
 	background-size: cover;
 	min-height: 200px;
-	
+
 	background-position: center;
 	background-color: #ccc;
 }
@@ -1175,7 +1175,7 @@ button {
 .accordion__Heading {
   background-color: #1B1C32;
   /*text-align: center; */
-  
+
   text-indent: 3px;
   font-weight: 700;
   padding: 2em;
@@ -1368,7 +1368,7 @@ button {
   color: #ffffff;
   font-weight: bold;
   /*padding: 1em; */
-  
+
   position: absolute;
   left: 30px;
   top: -15px;
@@ -1503,7 +1503,7 @@ button {
 
 /*---------------End of About Us --------*/
 
-/*---------------Beginning of Made With Cobra --------*/
+/*---------------Beginning of Made With Cobra - homepage section -------*/
 
 .homepage-custom-container {
   margin-bottom: 6em;
@@ -1542,6 +1542,57 @@ button {
 /*---------------End of Contact --------*/
 
 /*---------------End of Homepage --------*/
+
+/*---------------Beginning of Made With Cobra - page --------*/
+
+.made-awards-container {
+  margin: 6em 0 6em 0;
+}
+
+#content-container {
+  width: 100%;
+}
+
+.made-categories {
+  margin-bottom: 2em;
+}
+
+.made-categories-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.made-categories-container {
+  display: grid;
+  grid-template-columns: auto 400px;
+  grid-column-gap: 1em;
+}
+
+.made-categories.left {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 300px 300px;
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+}
+
+.made-categories.left .img-1 {
+  grid-column: 1/3;
+}
+
+.made-categories.left .img-3 {
+  grid-row: 2/3;
+}
+
+.made-categories.left .img-4 {
+  grid-column: 2/4;
+}
+
+
+
+
+/*---------------End of Made With Cobra --------*/
 
 /*---------------Beginning of Footer --------*/
 

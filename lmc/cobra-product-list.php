@@ -2,26 +2,26 @@
 session_start();
 
 // acquire shared info from other files
-include("dbconn.inc.php"); // database connection 
+include("dbconn.inc.php"); // database connection
 include("shared.php"); // stored shared contents, such as HTML header and page title, page footer, etc. in variables
 
 // make database connection
 $conn = dbConnect();
 
-print $HTMLHeader; 
+print $HTMLHeader;
 
 ?>
 
 <?php print $navigation; ?>
 
  <div class="products-main-container">
-    
+
     <?php
     print($sideNavigation);
     ?>
 
     <div class='container-fluid center mb-3'>
-        
+
 
          <?php
         //send the query to the database and get results
@@ -89,7 +89,7 @@ print $HTMLHeader;
                 ");
 
                 print ("
-                    
+
                         <form class='form-inline'>
                             <label class='mr-sm-2' for='inlineFormCustomSelect'>Preference</label>
                             <select class='custom-select mb-2 mr-sm-2 mb-sm-0' id='inlineFormCustomSelect'>
@@ -98,13 +98,13 @@ print $HTMLHeader;
                             <option value='2'>Two</option>
                             <option value='3'>Three</option>
                             </select>
-                        
+
                             <label class='custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0'>
                             <input type='checkbox' class='custom-control-input'>
                             <span class='custom-control-indicator'></span>
                             <span class='custom-control-description'>Remember my preference</span>
                             </label>
-                        
+
                             <button type='submit' class='btn btn-primary'>Submit</button>
                         </form>
 

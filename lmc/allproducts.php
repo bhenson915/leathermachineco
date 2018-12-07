@@ -49,7 +49,7 @@ $conn = dbConnect();
                     <div class='row'>");
                 while ($stmt->fetch()) {
                     print ("
-                    
+
                       <div class='product-medium-card'>
                         <div class='product-medium-image'>
                           <img src='img/products/$Image' alt=''>
@@ -101,7 +101,7 @@ $conn = dbConnect();
                     <div class='row'>");
                 while ($stmt->fetch()) {
                     print ("
-                    
+
                       <div class='product-medium-card'>
                         <div class='product-medium-image'>
                           <img src='img/products/$Image' alt=''>
@@ -153,7 +153,7 @@ $conn = dbConnect();
                     <div class='row'>");
                 while ($stmt->fetch()) {
                     print ("
-                    
+
                       <div class='product-medium-card'>
                         <div class='product-medium-image'>
                           <img src='img/products/$Image' alt=''>
@@ -205,7 +205,7 @@ $conn = dbConnect();
                     <div class='row'>");
                 while ($stmt->fetch()) {
                     print ("
-                    
+
                       <div class='product-medium-card'>
                         <div class='product-medium-image'>
                           <img src='img/products/$Image' alt=''>
@@ -257,7 +257,7 @@ $conn = dbConnect();
                     <div class='row'>");
                 while ($stmt->fetch()) {
                     print ("
-                    
+
                       <div class='product-medium-card'>
                         <div class='product-medium-image'>
                           <img src='img/products/$Image' alt=''>
@@ -309,7 +309,7 @@ $conn = dbConnect();
                     <div class='row'>");
                 while ($stmt->fetch()) {
                     print ("
-                    
+
                       <div class='product-medium-card'>
                         <div class='product-medium-image'>
                           <img src='img/products/$Image' alt=''>
@@ -341,7 +341,7 @@ $conn = dbConnect();
             } else {
                 print ("query failed");
             }
-            
+
 
         /* close connection */
         $conn->close();
@@ -353,6 +353,6 @@ $conn = dbConnect();
   <?php
     print($PageFooter);
   ?>
-          
+
 </body>
 </html>
