@@ -48,8 +48,17 @@ print $HTMLHeader;
                             <li class='breadcrumb-item'><a href='cobra-product-list.php'>Cobra Machines</a></li>
                         </ol>
                     </nav>
-                    <h1>Cobra Machines</h1>
                     <div class='row'>");
+
+                print("
+                    <div class='container-fluid mb-5'>
+                        <div class='product-header-container' id='cobra-machines-header'>
+                            <div class='product-header-content'>
+                                <h1>COBRA Machines</h1>
+                            </div>
+                        </div>
+                    </div>
+                ");
                 while ($stmt->fetch()) {
                     print ("
                     <a href='cobra-product-detail.php?PID=$PID'>
