@@ -34,12 +34,14 @@ $navigation =
     <li><a href='#'>Register</a></li>
     <li><a href='checkout/cart.html'><i class='fas fa-shopping-cart'></i></a></li>
     <div class='wrap'>
+    <form action='search.php' method='GET'>
       <div class='search'>
-        <input type='text' class='searchTerm' placeholder='What are you looking for?'>
-        <button type='submit' class='searchButton'>
+        <input type='text' name ='query' class='searchTerm' placeholder='What are you looking for?'>
+        <button type='submit' value='Search' class='searchButton'>
           <i class='fa fa-search'></i>
         </button>
       </div>
+    </form>
     </div>
   </ul>
 </div>

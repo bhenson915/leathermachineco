@@ -725,6 +725,24 @@ header nav {
   margin-top: 1em;
 }
 
+.product-header-content {
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2em;
+}
+
+.product-header-content h1{
+  color: white;
+}
+
+#cobra-machines-header {
+  background: url('../img/leather5.jpg') center center;
+  height: 30vh;
+}
+
 /*----End of Product medium ---- */
 
 /*---- Product Single ---*/
