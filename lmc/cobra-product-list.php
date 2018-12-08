@@ -2,26 +2,26 @@
 session_start();
 
 // acquire shared info from other files
-include("dbconn.inc.php"); // database connection 
+include("dbconn.inc.php"); // database connection
 include("shared.php"); // stored shared contents, such as HTML header and page title, page footer, etc. in variables
 
 // make database connection
 $conn = dbConnect();
 
-print $HTMLHeader; 
+print $HTMLHeader;
 
 ?>
 
 <?php print $navigation; ?>
 
  <div class="products-main-container">
-    
+
     <?php
     print($sideNavigation);
     ?>
 
     <div class='container-fluid center mb-3'>
-        
+
 
          <?php
         //send the query to the database and get results
