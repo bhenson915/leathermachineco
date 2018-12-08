@@ -1454,15 +1454,15 @@ button {
   height: 80px;
 }
 
-.faqs {
+.videos {
   grid-column: 2/3;
 }
 
-.videos {
+.forum {
   grid-column: 3/4;
 }
 
-.forum {
+.faqs {
   grid-column: 4/5;
 }
 
@@ -1581,10 +1581,76 @@ button {
   grid-column: 2/4;
 }
 
-
-
-
 /*---------------End of Made With Cobra --------*/
+
+/*---------------Beginning of Support page --------*/
+
+.support-heading {
+  margin: 6em 0 6em 0;
+}
+
+.support-videos {
+  margin-bottom: 6em;
+  padding: 2em;
+}
+
+.support-forums {
+  margin: 2em 0 6em 0;
+}
+
+.support-faqs {
+  display: grid;
+  grid-template-columns: 400px auto;
+  margin: 4em 0 6em 0;
+}
+
+.support-videos-container {
+  margin-top: 2em;
+}
+
+.support-faqs-container {
+  grid-column: 2/3;
+}
+
+
+/*---------------Beginning of FAQs Accordion --------*/
+
+.accordion-faqs-content, .menu {
+  background-color: transparent;
+  color: #1B1C32;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.accordion-faqs-content li {
+  padding: 0;
+  list-style-type: none;
+}
+
+.accordion-faqs-control {
+  border-bottom: 2px solid #C8995D;
+  color: #1B1C32;
+  display: block;
+  width: 100%;
+  padding: 1em;
+  margin: 0;
+  text-align: left;
+}
+
+.accordion-faqs-content h4 {
+  margin-top: 0.2em;
+}
+
+.accordion-faqs-panel {
+  display: none;
+}
+
+.accordion-faqs-panel p {
+  margin: 20px;
+}
+
+/*---------------End of Support page --------*/
 
 /*---------------Beginning of Footer --------*/
 
