@@ -682,7 +682,7 @@ header nav {
 }
 
 #products-side-navigation li {
-  line-height: 1.5em;
+  line-height: 2.25em;
   font-size: 14px;
   margin-bottom: .25rem;
 }
@@ -741,6 +741,14 @@ header nav {
 #cobra-machines-header {
   background: url('../img/leather5.jpg') center center;
   height: 30vh;
+}
+
+.highlight-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  flex-direction: row;
+  box-sizing: border-box;
 }
 
 /*----End of Product medium ---- */
@@ -894,7 +902,7 @@ header nav {
 }
 
 .card-two:nth-last-child(1) {
-	
+
 	padding-right: 1rem;
     width: 90%;
 	left: 5%;
@@ -905,7 +913,7 @@ header nav {
 	border: 1px solid #1B1C32;
 	background-size: cover;
 	min-height: 200px;
-	
+
 	background-position: center;
 	background-color: #ccc;
 }
@@ -1167,7 +1175,7 @@ button {
 .accordion__Heading {
   background-color: #1B1C32;
   /*text-align: center; */
-  
+
   text-indent: 3px;
   font-weight: 700;
   padding: 2em;
@@ -1360,7 +1368,7 @@ button {
   color: #ffffff;
   font-weight: bold;
   /*padding: 1em; */
-  
+
   position: absolute;
   left: 30px;
   top: -15px;
@@ -1744,3 +1752,18 @@ button {
   color: #EFE4D1;
 }
 
+.thumbnail {
+	overflow: hidden;
+}
+
+.thumbnail img{
+	width: 200px;
+}
+
+.search-result {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 1px solid #343a40;
+	padding: 1em;
+}
