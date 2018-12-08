@@ -58,6 +58,58 @@ print $HTMLHeader;
                             </div>
                         </div>
                     </div>
+                    <div class='container-fluid mx-auto'>
+                        <div class='row'>
+                            <div class='homepage-product-highlight col'>
+                                    <div class='highlight-row center'>
+                                        <div class='col-2 align-self-center text-center'>
+                                            <img src='img/products/cobraMachines/Cobra-Class-20.png' alt=''>
+                                        </div>
+                                        <div class='col-3'>
+                                            <h5>Best Selling</h5>
+                                            <h2 class='m-0 king'>COBRA MACHINE</h2>
+                                            <h4>Cobra Class 20</h4>
+                                            <hr class='my-4'>
+                                            <a href='cobra-product-detail.php?PID=14'>Shop Now!</a>
+                                        </div>
+                                        <div class='col-2 align-self-center text-center'>
+                                            <img src='img/products/cobraMachines/Cobra-Class-26.png' alt=''>
+                                        </div>
+                                        <div class='col-3'>
+                                            <h5>Select Models</h5>
+                                            <h2 class='m-0 king'>10% OFF REGULAR PRICE</h2>
+                                            <h4>Sale ends January 1st!</h4>
+                                            <hr class='my-4'>
+                                            <a href='cobra-product-detail.php?PID=15'>Shop Now!</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ");
+
+                print ("
+                    
+                    <div class='container-fluid'>
+                        <form class="form-inline">
+                            <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            </select>
+                        
+                            <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+                            <input type="checkbox" class="custom-control-input">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">Remember my preference</span>
+                            </label>
+                        
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+
                 ");
                 while ($stmt->fetch()) {
                     print ("
@@ -104,5 +156,7 @@ print $HTMLHeader;
         </div>
 
 <?php print $PageFooter; ?>
+
+<input type="select">
 </body>
 </html>

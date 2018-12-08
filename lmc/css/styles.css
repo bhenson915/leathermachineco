@@ -682,7 +682,7 @@ header nav {
 }
 
 #products-side-navigation li {
-  line-height: 1.5em;
+  line-height: 2.25em;
   font-size: 14px;
   margin-bottom: .25rem;
 }
@@ -741,6 +741,14 @@ header nav {
 #cobra-machines-header {
   background: url('../img/leather5.jpg') center center;
   height: 30vh;
+}
+
+.highlight-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  flex-direction: row;
+  box-sizing: border-box;
 }
 
 /*----End of Product medium ---- */
