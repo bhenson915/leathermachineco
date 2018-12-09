@@ -1,4 +1,5 @@
 <?php
+session_start();
 // acquire shared info from other files
 include("dbconn.inc.php"); // database connection
 include("shared.php"); // shared components
@@ -65,7 +66,7 @@ $conn = dbConnect();
                             <h3 class='mb-3'>$Title</h3>
                             <p>$Description</p><br>
                             <span class='product-price'>$$Price</span><br/>
-                            <button class='btn-primary'>Add to Cart</button>
+                            <a href='addtocart.php?PID=$PID' class='btn btn-primary' role='button'>Add to Cart</a>
                             </div>
                         </div>
                         <ul class='nav nav-tabs'>

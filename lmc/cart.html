@@ -1,147 +1,265 @@
-<html>
-
+<!DOCTYPE html>
+<html lang='en'>
 <head>
-  <title>My Cart</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <style>
-  .badge-notify{
-    background:red;
-    position:relative;
-    top: -20px;
-    right: 10px;
-  }
-  .my-cart-icon-affix {
-    position: fixed;
-    z-index: 999;
-  }
-  </style>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <link rel='shortcut icon' type='image/svg' href='img/favicon.png'/>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous'>
+    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel='stylesheet' href='css/styles.css'>
+
+    <title>Leather Machine Co. | Home of the Cobra</title>
 </head>
 
-<body class="container">
-
-  <div class="page-header">
-    <h1>Products
-      <div style="float: right; cursor: pointer;">
-        <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
+<body>
+  <div class='top-hat-container'>
+    <div class='top-hat-cta'>
+      <p>Free Ground Shipping on All Orders $30+ (Excludes HI, AK, PR)</p>
+    </div>
+    <div class='top-hat-search'>
+  
+    </div>
+    <ul class='top-hat-user'>
+      <li><a href='admin_list.php'>Login</a></li>
+      <span>|</span>
+      <li><a href='#'>Register</a></li>
+      <li><a href='checkout/cart.html'><i class='fas fa-shopping-cart'></i></a></li>
+      <div class='wrap'>
+      <form action='search.php' method='GET'>
+        <div class='search'>
+          <input type='text' name ='query' class='searchTerm' placeholder='What are you looking for?'>
+          <button type='submit' value='Search' class='searchButton'>
+            <i class='fa fa-search'></i>
+          </button>
+        </div>
+      </form>
       </div>
-    </h1>
+    </ul>
   </div>
+  
+  <header>
+    <h1 class='branding'><a href='index.html'>Leather Machine Co. | BEM</a></h1>
+    <nav>
+      <button class='navbar-toggler closed' type='button' data-target='#navigation'>
+        <i class='fa fa-bars'></i>
+      </button>
+  
+      <ul id='navigation'>
+        <li class='dropdown-menu'>
+          <a href='#'>Products <i class='fas fa-caret-down'></i></a>
+          <ul class='dropdown-links'>
+            <li><a href='allproducts.php'>All Products</a></li>
+            <li><a href='cobra-product-list.php'>Cobra Machines</a> </li>
+            <li><a href='splitter-product-list.php'>Leather Splitters</a> </li>
+            <li><a href='motors-product-list.php'>Motors</a> </li>
+            <li><a href='reducers-product-list.php'>Reducers</a> </li>
+            <li><a href='accessories-product-list.php'>Accessories</a> </li>
+            <li><a href='needle-product-list.php'>Needles and Thread</a> </li>
+          </ul>
+        </li>
+        <li>
+          <a href='support.html'>Support</a>
+        </li>
+        <li>
+          <a href='madewithcobra.html'>Made with Cobra</a>
+        </li>
+        <li>
+          <a href='about.html'>About</a>
+        </li>
+        <li>
+            <a href='contact.html'><button class='btn-primary'>Contact</button></a> 
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  <button type="addNewProduct" name="addNewProduct" id="addNewProduct">Add New Product</button>
-
-  <div class="row">
-    <div class="col-md-3 text-center">
-      <img src="images/img_1.png" width="150px" height="150px">
-      <br>
-      product 1 - <strong>$10</strong>
-      <br>
-      <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/img_1.png">Add to Cart</button>
-      <a href="#" class="btn btn-info">Details</a>
+  <div class="container">
+      <div class="checkout-wrap">
+        <ul id="checkout-bar" class="step1">
+          <li class="step1"><span>Review</span></li>
+          <li class="step2"><span>Shipping</span></li>
+          <li class="step3"><span>Payment</span></li>
+          <li class="step4"><span>Success</span></li>
+        </ul>
+      </div>
     </div>
+  
+              <!-- accordion tab 2 - Shipping Info -->
+              <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">Shipping Information</a>
+          </dt>
+        <dd class="accordion-content accordionItem" id="accordion2" aria-hidden="true">
+          <div class="container-fluid" style="padding-top: 20px;">
+            <p class="headings">Shipping Address</p>
+            <form class="main-container">
+              <div class="row">
+                <div class="col-xs-4">
+                  <label for="fullname" class="label-style">Full Name</label>
+                </div>
+                <div class="form-group col-lg-4">
+                  <input type="text" id="fullname" class="form-control" placeholder="Enter your full name" required>
+                </div>
+                <div class="hint">
+                  <i class="hint-icon">i</i>
+                  <p class="hint-description">Enter your full name</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4">
+                  <label for="companyname" class="label-style">Company Name</label>
+                </div>
+                <div class="form-group col-lg-4">
+                  <input type="text" id="companyname" class="form-control" placeholder="Enter Company Name (optional)" required>
+                </div>
+                <div class="hint">
+                  <i class="hint-icon">i</i>
+                  <p class="hint-description">Enter your Company name</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4">
+                  <label for="phonenumber" class="label-style">Phone Number</label>
+                </div>
+                <div class="form-group col-lg-4">
+                  <input type="text" id="phonenumber" class="form-control" placeholder="Enter Phone Number" required>
+                </div>
+                <div class="hint">
+                  <i class="hint-icon">i</i>
+                  <p class="hint-description">In (555)5555-555 Format</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4">
+                  <label for="address-line1" class="label-style">Address Line 1</label>
+                </div>
+                <div class="form-group col-lg-4">
+                  <input type="text" id="address-line1" class="form-control" placeholder="Enter Address" required>
+                </div>
+                <div class="hint">
+                  <i class="hint-icon">i</i>
+                  <p class="hint-description">Address Line 1</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4">
+                  <label for="address-line2" class="label-style">Line 2</label>
+                </div>
+                <div class="form-group col-lg-4">
+                  <input type="text" id="address-line2" class="form-control" placeholder="Apt, Suite, Bldg (optional)" required>
+                </div>
+                <div class="hint">
+                  <i class="hint-icon">i</i>
+                  <p class="hint-description">Address Line 2</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4">
+                  <label for="city" class="label-style">City</label>
+                </div>
+                <div class="form-group col-lg-4">
+                  <input type="text" id="city" class="form-control" placeholder="Enter City" required>
+                </div>
+                <div class="hint">
+                  <i class="hint-icon">i</i>
+                  <p class="hint-description">Enter your City</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4">
+                  <label for="state" class="label-style">State</label>
+                </div>
+                <div class="form-group col-lg-4">
+                  <input type="text" id="state" class="form-control" placeholder="Enter State" required>
+                </div>
+                <div class="hint">
+                  <i class="hint-icon">i</i>
+                  <p class="hint-description">Ex: Indiana as IN</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4">
+                  <label for="country" class="label-style">Country</label>
+                </div>
+                <div class="form-group col-lg-4">
+                  <input type="text" id="country" class="form-control" placeholder="Enter Country" required>
+                </div>
+                <div class="hint">
+                  <i class="hint-icon">i</i>
+                  <p class="hint-description">Enter your country</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4">
+                  <label for="zipcode" class="label-style">Zip Code</label>
+                </div>
+                <div class="form-group col-lg-4">
+                  <input type="text" id="zipcode" class="form-control" placeholder="Enter Zip Code" required>
+                </div>
+                <div class="hint">
+                  <i class="hint-icon">i</i>
+                  <p class="hint-description">Enter ZipCode.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class=" form-group col-xs-4">
+                    <button class="btn-primary label-style" type="submit">Submit</button>
+                    <button class="btn-secondary" type="reset">Reset</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </dd>
+        <!-- end accordion tab 2 -->
+  
 
-    <div class="col-md-3 text-center">
-      <img src="images/img_2.png" width="150px" height="150px">
-      <br>
-      product 2 - <strong>$20</strong>
-      <br>
-      <button class="btn btn-danger my-cart-btn" data-id="2" data-name="product 2" data-summary="summary 2" data-price="20" data-quantity="1" data-image="images/img_2.png">Add to Cart</button>
-      <a href="#" class="btn btn-info">Details</a>
-    </div>
+        <div class='footer'>
+          <div class='footer-content'>
+            <div class='footer-products'>
+              <p class='subheading'>Products</p>
+              <a href='#'>Most Popular Items</a><br>
+              <a href='#'>Cobra Machines</a><br>
+              <a href='#'>Other Machines</a><br>
+              <a href='#'>Motors/Reducers</a><br>
+              <a href='#'>Accessories</a>
+              </li>
+            </div>
+            <div class='footer-support'>
+              <p class='subheading'>Support</p>
+              <a href='#'>FAQs</a><br>
+              <a href='#'>Videos/Tips</a><br>
+              <a href='#'>Forum</a>
+            </div>
+            <div class='footer-info'>
+              <p class='subheading'>Info</p>
+              <a href='#'>About Us</a><br>
+              <a href='#'>Contact</a>
+            </div>
+            <div class='footer-account'>
+              <p class='subheading'>Account</p>
+              <a href='#'>Log In</a><br>
+              <a href='#'>Register</a>
+            </div>
+            <div class='footer-newsletter'>
+              <p class='subheading'>Subscribe to our newsletter</p>
+              <input type='email' name='email' id='footer-email' placeholder='Email'><br><br>
+              <button type='button' class='btn-secondary' id='footer-btn'>Submit</button>
+            </div>
+            <p class='subheading social'>Connect with us</p>
+            <div class='footer-social'>
+              <img src='img/icons/facebook.png'>
+              <img src='img/icons/twitter.png'>
+              <img src='img/icons/youtube.png'>
+            </div>
+            <p class='copyright'>© 2018 Leather Machine Co</p>
+          </div>
+        </div>
+      
+          <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous'></script>
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous'></script>
+          <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous'></script>
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js'></script>
+          <script src='js/app.js'></script>
 
-    <div class="col-md-3 text-center">
-      <img src="images/img_3.png" width="150px" height="150px">
-      <br>
-      product 3 - <strong>$30</strong>
-      <br>
-      <button class="btn btn-danger my-cart-btn" data-id="3" data-name="product 3" data-summary="summary 3" data-price="30" data-quantity="1" data-image="images/img_3.png">Add to Cart</button>
-      <a href="#" class="btn btn-info">Details</a>
-    </div>
-
-    <div class="col-md-3 text-center">
-      <img src="images/img_4.png" width="150px" height="150px">
-      <br>
-      product 4 - <strong>$40</strong>
-      <br>
-      <button class="btn btn-danger my-cart-btn" data-id="4" data-name="product 4" data-summary="summary 4" data-price="40" data-quantity="1" data-image="images/img_4.png">Add to Cart</button>
-      <a href="#" class="btn btn-info">Details</a>
-    </div>
-
-    <div class="col-md-3 text-center">
-      <img src="images/img_5.png" width="150px" height="150px">
-      <br>
-      product 5 - <strong>$50</strong>
-      <br>
-      <button class="btn btn-danger my-cart-btn" data-id="5" data-name="product 5" data-summary="summary 5" data-price="50" data-quantity="1" data-image="images/img_5.png">Add to Cart</button>
-      <a href="#" class="btn btn-info">Details</a>
-    </div>
-
-  </div>
-
-
-  <script src="js/jquery-2.2.3.min.js"></script>
-  <script type='text/javascript' src="js/bootstrap.min.js"></script>
-  <script type='text/javascript' src="js/jquery.mycart.js"></script>
-  <script type="text/javascript">
-  $(function () {
-
-    var goToCartIcon = function($addTocartBtn){
-      var $cartIcon = $(".my-cart-icon");
-      var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
-      $addTocartBtn.prepend($image);
-      var position = $cartIcon.position();
-      $image.animate({
-        top: position.top,
-        left: position.left
-      }, 500 , "linear", function() {
-        $image.remove();
-      });
-    }
-
-    $('.my-cart-btn').myCart({
-      currencySymbol: '$',
-      classCartIcon: 'my-cart-icon',
-      classCartBadge: 'my-cart-badge',
-      classProductQuantity: 'my-product-quantity',
-      classProductRemove: 'my-product-remove',
-      classCheckoutCart: 'my-cart-checkout',
-      affixCartIcon: true,
-      showCheckoutModal: true,
-      numberOfDecimals: 2,
-      cartItems: [
-        {id: 1, name: 'product 1', summary: 'summary 1', price: 10, quantity: 1, image: 'images/img_1.png'},
-        {id: 2, name: 'product 2', summary: 'summary 2', price: 20, quantity: 2, image: 'images/img_2.png'},
-        {id: 3, name: 'product 3', summary: 'summary 3', price: 30, quantity: 1, image: 'images/img_3.png'}
-      ],
-      clickOnAddToCart: function($addTocart){
-        goToCartIcon($addTocart);
-      },
-      afterAddOnCart: function(products, totalPrice, totalQuantity) {
-        console.log("afterAddOnCart", products, totalPrice, totalQuantity);
-      },
-      clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
-        console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
-      },
-      checkoutCart: function(products, totalPrice, totalQuantity) {
-        var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
-        checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
-        $.each(products, function(){
-          checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
-        });
-        alert(checkoutString)
-        console.log("checking out", products, totalPrice, totalQuantity);
-      },
-      getDiscountPrice: function(products, totalPrice, totalQuantity) {
-        console.log("calculating discount", products, totalPrice, totalQuantity);
-        return totalPrice * 0.5;
-      }
-    });
-
-    $("#addNewProduct").click(function(event) {
-      var currentElementNo = $(".row").children().length + 1;
-      $(".row").append('<div class="col-md-3 text-center"><img src="images/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="images/img_empty.png">Add to Cart</button><a href="#" class="btn btn-info">Details</a></div>')
-    });
-  });
-  </script>
 
 </body>
 

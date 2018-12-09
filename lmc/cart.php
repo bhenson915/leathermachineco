@@ -1,4 +1,5 @@
 <?php
+session_start();
 // acquire shared info from other files
 include("dbconn.inc.php"); // database connection
 include("shared.php"); // shared components
