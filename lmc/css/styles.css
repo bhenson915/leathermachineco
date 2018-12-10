@@ -357,6 +357,15 @@ button:hover {
   transition: background 200ms;
 }
 
+.btn-cta.cta-secondary {
+  border: 2px solid #C8995D;
+  background: none;
+}
+
+.btn-cta.cta-secondary:hover {
+  background-color: #C8995D; 
+}
+
 /*--------------- Navigation --------*/
 
 .top-hat-container {
@@ -1427,7 +1436,7 @@ button {
 }
 
 .homepage-products {
-  margin-top: 6em;
+  margin-top: 8em;
 }
 
 .homepage-products-container {
@@ -1482,23 +1491,28 @@ button {
   display: grid;
   grid-template-columns: repeat(8,1fr);
   grid-template-rows: 150px 280px 150px;
-  margin: 6em 0 6em 0;
+  margin: 6em 0 12em 0;
 }
 
 .about-info {
-  grid-column: 1/6;
+  grid-column: 1/5;
   grid-row: 2;
   position: relative;
 }
 
 .about-photo {
   grid-column: 4/9;
+  margin-top: 2.5em;
   width: 100%;
 }
 
-.about-info-block {
-  right: -60px;
+.about-info-content {
   background-color: #efe4d1;
+  padding: 2em 1em;
+}
+
+.btn-cta.cta-secondary {
+  margin-top: 2.5em;
 }
 
 /*---------------End of About Us --------*/
@@ -1507,6 +1521,7 @@ button {
 
 .homepage-custom-container {
   margin-bottom: 6em;
+  padding: 2em 4em;
 }
 
 /*---------------End of Made With Cobra --------*/
@@ -1516,7 +1531,7 @@ button {
 .homepage-contact-container {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  margin-bottom: 6em;
+  margin-bottom: 8em;
 }
 
 .contact-middle,
@@ -1529,12 +1544,13 @@ button {
 .contact-middle h4,
 .contact-right h4 {
   float: right;
+  margin-top: 0.6em;
 }
 
 .contact-middle img,
 .contact-right img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   margin-right: 0.5em;
   padding: 0.5em;
 }
