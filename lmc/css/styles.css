@@ -411,6 +411,7 @@ button:hover {
   width: 40px;
   height: 38px;
   padding: 0;
+  margin-top: .4em;
   border: 1px solid #efe4d1;
   background: #c8995d;
   color: #fff;
@@ -654,6 +655,15 @@ header nav {
   min-width: 1em;
 }
 
+@media only screen and (max-width: 992px){
+  .top-hat-cta{
+    display:none;
+  }
+  .top-hat-container{
+    justify-content: center;
+  }
+}
+
 /*--------------- End of Navigation --------*/
 
 /*--------------- Products Components --------*/
@@ -696,7 +706,7 @@ header nav {
   margin-bottom: .25rem;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 992px){
   #products-side-navigation{
     display: none;
   }
