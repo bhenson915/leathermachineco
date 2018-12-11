@@ -113,6 +113,13 @@ print $HTMLHeader;
                     ");
                 }
 
+                print ("
+                <div class='container-fluid mt-5'>
+                    <div class='ad-container center'>
+                        <img src='img/LMC_Banner_bottom_1280x375.jpg' alt=''>
+                    </div>
+                </div>");
+
                 print ("</div>");
 
 
