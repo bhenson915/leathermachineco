@@ -1706,6 +1706,47 @@ button {
   background-image: url("../img/leather-worker.jpg");
 }
 
+input[type=text], input[type=textarea] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #EFE4D1;
+  color: #1b1c32;
+  padding: .5rem 1rem;
+  border: 1px solid #C8995D;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #C8995D;
+  color: WHITE;
+}
+
+label {
+  color: #c8995d;
+}
+
+.contact-page-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+   margin-top: 8em;
+  margin-bottom: 10em;
+}
+
+.contact-info-right {
+  grid-column: 2/3;
+}
+
 /*---------------End of Contact page --------*/
 
 
