@@ -770,6 +770,14 @@ header nav {
   box-sizing: border-box;
 }
 
+.ad-container {
+  width: 100%;
+}
+
+.ad-container img {
+  width: 800px;
+}
+
 /*----End of Product medium ---- */
 
 /*---- Product Single ---*/
