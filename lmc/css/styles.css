@@ -1685,7 +1685,7 @@ button {
   background-image: url("../img/leather.jpg");
 }
 
-.about-info {
+.about-page-info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
@@ -1697,10 +1697,17 @@ button {
   grid-column: 2/3;
 }
 
-
-
-
 /*---------------End of About page --------*/
+
+/*---------------Beginning of Contact page --------*/
+
+.entry-header.contact {
+  width: 100%;
+  background-image: url("../img/leather-worker.jpg");
+}
+
+/*---------------End of Contact page --------*/
+
 
 
 
