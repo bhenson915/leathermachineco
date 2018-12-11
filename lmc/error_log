@@ -1,0 +1,196 @@
+[20-Nov-2018 21:56:17 UTC] PHP Warning:  mysqli_stmt::bind_result(): Number of bind variables doesn't match number of fields in prepared statement in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmcBEM/test.php on line 501
+[20-Nov-2018 22:59:12 UTC] PHP Parse error:  syntax error, unexpected 'htmlentities' (T_STRING) in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmcBEM/test.php on line 283
+[22-Nov-2018 02:35:50 UTC] PHP Deprecated:  mysql_set_charset(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmcBEM/test.php on line 261
+[22-Nov-2018 02:35:50 UTC] PHP Warning:  mysql_set_charset(): Access denied for user ''@'localhost' (using password: NO) in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmcBEM/test.php on line 261
+[22-Nov-2018 02:35:50 UTC] PHP Warning:  mysql_set_charset(): A link to the server could not be established in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmcBEM/test.php on line 261
+[22-Nov-2018 02:37:26 UTC] PHP Deprecated:  mysql_set_charset(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmcBEM/test.php on line 261
+[22-Nov-2018 02:37:26 UTC] PHP Warning:  mysql_set_charset(): Access denied for user ''@'localhost' (using password: NO) in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmcBEM/test.php on line 261
+[22-Nov-2018 02:37:26 UTC] PHP Warning:  mysql_set_charset(): A link to the server could not be established in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmcBEM/test.php on line 261
+[03-Dec-2018 18:52:23 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:52:23 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:52:23 UTC] PHP Warning:  include(): Failed opening 'access.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:52:41 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:52:41 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:52:41 UTC] PHP Warning:  include(): Failed opening 'access.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:53:27 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:53:27 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:53:27 UTC] PHP Warning:  include(): Failed opening 'access.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:53:39 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:53:39 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:53:39 UTC] PHP Warning:  include(): Failed opening 'access.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:54:36 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:54:36 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:54:36 UTC] PHP Warning:  include(): Failed opening 'access.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:54:48 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:54:48 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:54:48 UTC] PHP Warning:  include(): Failed opening 'access.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:55:19 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:55:19 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:55:19 UTC] PHP Warning:  include(): Failed opening 'access.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:55:36 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:55:36 UTC] PHP Warning:  include(access.php): failed to open stream: No such file or directory in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 18:55:36 UTC] PHP Warning:  include(): Failed opening 'access.php' for inclusion (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_list.php on line 6
+[03-Dec-2018 19:26:51 UTC] PHP Warning:  mysqli_stmt::close(): invalid object or resource mysqli_stmt
+ in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_form.php on line 95
+[05-Dec-2018 02:11:31 UTC] PHP Warning:  mysqli_stmt::bind_result(): Number of bind variables doesn't match number of fields in prepared statement in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/cobra-product-detail.php on line 45
+[05-Dec-2018 02:53:56 UTC] PHP Warning:  mysqli_stmt::bind_result(): Number of bind variables doesn't match number of fields in prepared statement in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/cobra-product-list.php on line 48
+[05-Dec-2018 03:13:19 UTC] PHP Warning:  mysqli_stmt::close(): invalid object or resource mysqli_stmt
+ in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_form.php on line 62
+[05-Dec-2018 03:13:19 UTC] PHP Warning:  mysqli_stmt::close(): invalid object or resource mysqli_stmt
+ in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_form.php on line 95
+[05-Dec-2018 03:26:41 UTC] PHP Warning:  mysqli_stmt::close(): invalid object or resource mysqli_stmt
+ in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_form.php on line 94
+[05-Dec-2018 14:26:44 UTC] PHP Warning:  include(
+&lt;div class='footer'&gt;
+    &lt;div class='footer-content'&gt;
+      &lt;div class='footer-products'&gt;
+        &lt;p class='subheading'&gt;Products&lt;/p&gt;
+        &lt;a href='#'&gt;Most Popular Items&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Cobra Machines&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Other Machines&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Motors/Reducers&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Accessories&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/div&gt;
+      &lt;div class='footer-support'&gt;
+        &lt;p class='subheading'&gt;Support&lt;/p&gt;
+        &lt;a href='#'&gt;FAQs&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Videos/Tips&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Forum&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class='footer-info'&gt;
+        &lt;p class='subheading'&gt;Info&lt;/p&gt;
+        &lt;a href='#'&gt;About Us&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Contact&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class='footer-account'&gt;
+    in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/cobra-product-detail.php on line 108
+[05-Dec-2018 14:26:44 UTC] PHP Warning:  include(
+&lt;div class='footer'&gt;
+    &lt;div class='footer-content'&gt;
+      &lt;div class='footer-products'&gt;
+        &lt;p class='subheading'&gt;Products&lt;/p&gt;
+        &lt;a href='#'&gt;Most Popular Items&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Cobra Machines&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Other Machines&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Motors/Reducers&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Accessories&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/div&gt;
+      &lt;div class='footer-support'&gt;
+        &lt;p class='subheading'&gt;Support&lt;/p&gt;
+        &lt;a href='#'&gt;FAQs&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Videos/Tips&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Forum&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class='footer-info'&gt;
+        &lt;p class='subheading'&gt;Info&lt;/p&gt;
+        &lt;a href='#'&gt;About Us&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Contact&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class='footer-account'&gt;
+    in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/cobra-product-detail.php on line 108
+[05-Dec-2018 14:26:44 UTC] PHP Warning:  include(): Failed opening '
+&lt;div class='footer'&gt;
+    &lt;div class='footer-content'&gt;
+      &lt;div class='footer-products'&gt;
+        &lt;p class='subheading'&gt;Products&lt;/p&gt;
+        &lt;a href='#'&gt;Most Popular Items&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Cobra Machines&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Other Machines&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Motors/Reducers&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Accessories&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/div&gt;
+      &lt;div class='footer-support'&gt;
+        &lt;p class='subheading'&gt;Support&lt;/p&gt;
+        &lt;a href='#'&gt;FAQs&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Videos/Tips&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Forum&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class='footer-info'&gt;
+        &lt;p class='subheading'&gt;Info&lt;/p&gt;
+        &lt;a href='#'&gt;About Us&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Contact&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class='foot in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/cobra-product-detail.php on line 108
+[05-Dec-2018 14:26:49 UTC] PHP Warning:  include(
+&lt;div class='footer'&gt;
+    &lt;div class='footer-content'&gt;
+      &lt;div class='footer-products'&gt;
+        &lt;p class='subheading'&gt;Products&lt;/p&gt;
+        &lt;a href='#'&gt;Most Popular Items&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Cobra Machines&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Other Machines&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Motors/Reducers&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Accessories&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/div&gt;
+      &lt;div class='footer-support'&gt;
+        &lt;p class='subheading'&gt;Support&lt;/p&gt;
+        &lt;a href='#'&gt;FAQs&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Videos/Tips&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Forum&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class='footer-info'&gt;
+        &lt;p class='subheading'&gt;Info&lt;/p&gt;
+        &lt;a href='#'&gt;About Us&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Contact&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class='footer-account'&gt;
+    in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/cobra-product-detail.php on line 108
+[05-Dec-2018 14:26:49 UTC] PHP Warning:  include(
+&lt;div class='footer'&gt;
+    &lt;div class='footer-content'&gt;
+      &lt;div class='footer-products'&gt;
+        &lt;p class='subheading'&gt;Products&lt;/p&gt;
+        &lt;a href='#'&gt;Most Popular Items&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Cobra Machines&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Other Machines&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Motors/Reducers&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Accessories&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/div&gt;
+      &lt;div class='footer-support'&gt;
+        &lt;p class='subheading'&gt;Support&lt;/p&gt;
+        &lt;a href='#'&gt;FAQs&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Videos/Tips&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Forum&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class='footer-info'&gt;
+        &lt;p class='subheading'&gt;Info&lt;/p&gt;
+        &lt;a href='#'&gt;About Us&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Contact&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class='footer-account'&gt;
+    in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/cobra-product-detail.php on line 108
+[05-Dec-2018 14:26:49 UTC] PHP Warning:  include(): Failed opening '
+&lt;div class='footer'&gt;
+    &lt;div class='footer-content'&gt;
+      &lt;div class='footer-products'&gt;
+        &lt;p class='subheading'&gt;Products&lt;/p&gt;
+        &lt;a href='#'&gt;Most Popular Items&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Cobra Machines&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Other Machines&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Motors/Reducers&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Accessories&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/div&gt;
+      &lt;div class='footer-support'&gt;
+        &lt;p class='subheading'&gt;Support&lt;/p&gt;
+        &lt;a href='#'&gt;FAQs&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Videos/Tips&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Forum&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class='footer-info'&gt;
+        &lt;p class='subheading'&gt;Info&lt;/p&gt;
+        &lt;a href='#'&gt;About Us&lt;/a&gt;&lt;br&gt;
+        &lt;a href='#'&gt;Contact&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class='foot in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/cobra-product-detail.php on line 108
+[05-Dec-2018 16:52:50 UTC] PHP Warning:  mysqli_stmt::close(): invalid object or resource mysqli_stmt
+ in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_form.php on line 61
+[05-Dec-2018 16:53:26 UTC] PHP Warning:  mysqli_stmt::close(): invalid object or resource mysqli_stmt
+ in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_form.php on line 61
+[05-Dec-2018 16:54:46 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/admin_edit.php on line 83
+[07-Dec-2018 03:16:41 UTC] PHP Parse error:  syntax error, unexpected 'while' (T_WHILE) in /home/bryandavidh/ctec4350.bryandavid.uta.cloud/leathermachineco/lmc/cobra-product-list.php on line 63
